@@ -1,0 +1,28 @@
+.bootstrap_png{
+    width: 21px;
+    height: 21px;
+    background-image: url("/static/pic/img/bootstrap.png");
+    display: inline-block;
+}
+
+
+.p_add{
+    background-position: -191px 0;
+    vertical-align:bottom; //显示的位置
+    margin-left:1px;
+    margin-right:1px ;
+}
+
+.p_list{
+    background-position: -797px -63px;
+    vertical-align:bottom; //显示的位置
+    margin-left:1px;
+    margin-right:1px ;
+}
+
+.p_edit{
+    background-position: -189px -21px;
+    vertical-align:bottom; //显示的位置
+    margin-left:1px;
+    margin-right:1px ;
+}

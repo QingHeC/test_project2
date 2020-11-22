@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/bootstrap-3.3.4.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/bootstrap-combined.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/ccc_m/css_ccc.css" type="text/css">
+    <link rel="stylesheet" href="/static/ccc_m/ccc_png.css" type="text/css">
+
+    <script  src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div id="ul_con"  style="height:400px; overflow:auto;  ">
+{# class="span12" style="height:400px; overflow:auto" #}
+    {#                添加按钮#}
+            <ul class="thumbnails row">
+                {% for task in task_pro %}
+                    <li class="span4 " style="margin-left:0px;margin-right: 1.5%">
+                        <div class="thumbnail">
+    {#                            <img alt="300x200" src="#" />#}
+                            <div class="caption">
+                                <h3>
+                                    {{ task.pro_name }}
+                                </h3>
+                                <p class="test_hide" style="height: 43px;">
+                                    {{ task.pro_text }}
+                                </p>
+                                <p>
+                                    <a class="btn btn-primary" href="{% url 'task_project_details' %}?id={{ task.id }}" >项目详情</a>
+    {#                                    <a class="btn" href="#" onclick="aler()">添加人员</a>#}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

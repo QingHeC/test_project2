@@ -1,0 +1,2086 @@
+
+
+{% extends "showhome.html" %}
+
+{% block title %}
+    <title>项目</title>
+{% endblock %}
+
+{% block add_css %}
+{#<link rel="stylesheet" href="/static/css/bootstrap-3.3.4.css">#}
+    <link rel="stylesheet" href="/static/css/bootstrap-combined.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="/static/css/font-awesome.4.6.0.css" type="text/css">
+    <link rel="stylesheet" href="/static/stagings/stagings.css" type="text/css">
+{#    <link rel="stylesheet" href="/static/publics/public_s.css" type="text/css">#}
+{#    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">#}
+        <link rel="stylesheet" href="/static/ccc_m/css_ccc.css" type="text/css">
+    <link rel="stylesheet" href="/static/ccc_m/ccc_png.css" type="text/css">
+
+        <link rel="stylesheet" href="/static/css/add_interface_d.css" type="text/css">
+    <link rel="stylesheet" href="/static/add_interfa/add_interface_data.css" type="text/css">
+
+{#    表格#}
+    <link rel="stylesheet" href="/static/examples/css/normalize.css">
+    <link rel="stylesheet" href="/static/examples/css/mmGrid.css">
+    <link rel="stylesheet" href="/static/examples/css/mmPaginator.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/mmGrid-bootstrap.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/mmPaginator-bootstrap.css">
+
+{% endblock %}
+
+{% block add_js %}
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/bootstrap_table/src/bootstrap-table.js" type="text/javascript"></script>
+
+    <script src="/static/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/static/ccc_m/js/show_request.js" type="text/javascript"></script>
+    <script src="/static/ccc_m/js/add_testcase.js" type="text/javascript"></script>
+    <script src="/static/js/c_tables_add.js" type="text/javascript"></script>
+    <script src="/static/add_interfa/grid_add.js" type="text/javascript"></script>
+    <script src="/static/js/auto-line-number.js"  type="text/javascript"></script>
+{#    表格#}
+    <script src="/static/examples/js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="/static/examples/js/vendor/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/static/examples/js/plugins.js" type="text/javascript"></script>
+    <script src="/static/examples/js/vendor/json2.js" type="text/javascript"></script>
+    <script src="/static/examples/js/mmGrid.js" type="text/javascript"></script>
+    <script src="/static/examples/js/mmPaginator.js" type="text/javascript"></script>
+
+{% endblock %}
+
+{% block center_text %}
+
+{% csrf_token %}
+<div>
+
+</div>
+
+<div>
+
+    <div class="container-fluid span3">
+        <div class="">
+        <div style="width: 100%;float: left;">
+            <h4>当前模块：<a name="12"  value="{{ revert_lists.0.id }}" id="project_name" class="combobox " data-style="btn-primary">{{ revert_lists.0.name | safe}}</a></h4>
+            <br>
+        </div>
+{#        <div style="float: left;">#}
+
+
+{#            tab页#}
+        <div class="container-fluid"  style="">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-409712">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#panel-348587" data-toggle="tab">测试示例</a>
+                            </li>
+                            <li>
+                                <a href="#panel-466118" data-toggle="tab">测试用例</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <!--测试列表-->
+                            <div class="tab-pane active" id="panel-348587">
+                                <div style="width: 40%;float: left">
+
+                    {#            <button class="btn" type="button">添加模块</button>#}
+                                <a id="modal-579920" href="#modal-container-579921" role="button" class="btn" data-toggle="modal">添加分类</a>
+                                <div id="modal-container-579921" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-left: 30%;">
+                                    <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3 id="myModalLabel">
+                                            添加分类
+                                        </h3>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="container-fluid">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <form class="form-inline">
+                                                        <fieldset>
+                                                             <label>分类名：</label><input id="model_pro_name" type="text" style="height: 27px;" />
+                                                            <span class="help-block">描述：.</span>
+                                                            <textarea id="model_pro_text" cols="30" rows="10" style="width: 100%"></textarea>
+                    {#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="save_projectName()">保存设置</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                                <br>
+                                <br>
+                            <div class="row-fluid" style="width: 100%;float: left">
+
+                            <div class="">
+                                <div class="accordion" id="accordion-539820">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-539820" onclick="show_tab_list('')" >分类</a>
+                                        </div>
+                    {##}
+                    {#                    <div id="accordion-element-475751" class="accordion-body collapse">#}
+                    {#                        {% for foo in task_Datas %}#}
+                    {##}
+                    {#                        <div class="accordion-inner" >#}
+                    {#                            <a href="###" value="" name="{{ foo.0 }}" onclick="req_rightdata({{ foo.0 }},'{{ foo.1 }}');">{{ foo.1 }}</a>#}
+                    {#                        </div>#}
+                    {#                        {% endfor %}#}
+                    {#                    </div>#}
+
+                    {#					<div id="accordion-element-475751" class="accordion-body collapse">#}
+                    {#						<div class="accordion-inner">#}
+                    {#							功能块...#}
+                    {#						</div>#}
+                    {#					</div>#}
+                                    </div>
+                                {% for i in task_Datas %}
+                                    <div class="accordion-group">
+
+
+                                        <div class="accordion-heading">
+                                             <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion-539820{{ i.0 }}" href="#accordion-element-452251{{ i.0 }}">{{ i.1 }}
+                                                <a id="modal-579934{{ i.0 }}"  title="显示列表"  data-toggle="modal"class="bootstrap_png p_list" style="margin: -28px 47px;float: right;" onclick="show_tab_list({{ i.0 }})"></a>
+                                                <a id="modal-579935{{ i.0 }}" href="#modal-container-576635" title="添加任务"  data-toggle="modal"class="bootstrap_png p_add" style="margin: -28px 9px;float: right;" onclick="setUp_name({{ i.0 }})"></a>
+                                             </a>
+
+
+                                        </div>
+                                        <div id="accordion-element-452251{{ i.0 }}" class="accordion-body collapse">
+                                            {% for f_name in task_names %}
+                                                {% if i.0 == f_name.3 %}
+                    {#                                <p>{{ f_name }}</p>#}
+                                                    <div class="accordion-inner" style="text-align:center;">
+
+                                                        <a href="#" onclick="show_request({{ f_name.0 }},'{{ f_name.1 }}');">{{ f_name.1 }}</a>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+
+
+
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="panel-466118">
+{#                            添加用例#}
+                                <div style="width: 40%;float: left">
+                                    <a id="modal-579921" href="#modal-container-579923" role="button" class="btn" data-toggle="modal">添加用例</a>
+                                    <p style="color: red;">功能待完善</p>
+                                    <div id="modal-container-579923" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-left: 30%;height: 447px;">
+                                    <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3 id="add_test">
+                                            添加测试用例
+                                        </h3>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="container-fluid">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <form class="form-inline">
+                                                        <fieldset>
+                                                             <label>用例名称：</label><input id="add_test_name" type="text" style="height: 27px;" />
+                                                            <span class="help-block">描述：.</span>
+                                                            <textarea id="add_test_text" cols="30" rows="10" style="width: 100%"></textarea>
+                    {#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="save_testname()">保存</button>
+                                    </div>
+                                </div>
+                                </div>
+
+
+
+                                <br>
+                                <br>
+                            <div class="row-fluid" style="width: 100%;float: left">
+
+                            <div class="">
+                                <div class="accordion" id="accordion-579023">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-539820" onclick="show_casename_list('')" >用例列表</a>
+                                        </div>
+
+                                    </div>
+                                {% for i in case_names %}
+                                    <div class="accordion-group">
+
+
+                                        <div class="accordion-heading">
+                                             <a class="accordion-toggle" data-toggle="collapse"  data-parent="#accordion-539820{{ i.0 }}" onclick="show_casename_list({{ i.0 }})" href="#accordion-element-452251{{ i.0 }}">{{ i.1 }}
+{#                                                <a id="modal-579934{{ i.0 }}"  title="显示列表"  data-toggle="modal"class="bootstrap_png p_list" style="margin: -28px 47px;float: right;" onclick="show_casename_list({{ i.0 }})"></a>#}
+{#                                                <a id="modal-579935{{ i.0 }}" href="#modal-container-576635" title="添加任务"  data-toggle="modal"class="bootstrap_png p_add" style="margin: -28px 9px;float: right;" onclick="setUp_name({{ i.0 }})"></a>#}
+                                             </a>
+
+
+                                        </div>
+                                        <div id="accordion-element-452251{{ i.0 }}" class="accordion-body collapse">
+                                            {% for f_name in task_names %}
+                                                {% if i.0 == f_name.3 %}
+                    {#                                <p>{{ f_name }}</p>#}
+                                                    <div class="accordion-inner" style="text-align:center;">
+
+                                                        <a href="#" onclick="show_request({{ f_name.0 }},'{{ f_name.1 }}');">{{ f_name.1 }}</a>
+                                                    </div>
+                                                {% endif %}
+                                            {% endfor %}
+
+
+
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{#----------------2#}
+
+
+        <div style="width: 100%;float: left">
+{#                是哪个模块，需要验证是否已经选择#}
+                <h4 href="#" style="text-align:left;"><a id="show_list_reqname" name="" style="text-align:left;"></a>
+                </h4>
+            </div>
+{#target="view_window"#}
+{#            <a class="btn btn-primary" target="view_window" id="addhttp" urd={% url "add_interface" %} } target="_blank" onclick="add_date(this)">添加HTTP</a>#}
+
+    </div>
+
+</div>
+
+
+{#        右侧内容#}
+    <div class="span10">
+
+
+        <div class="fra_center_right" style="width:100%;height:100%;display: none;">
+{#/test/interface/add_interface/list_name/#}
+            <iframe id="ifra_right_data" width="100%" height="100%"  src="{% url 'list_name' %}?project={{ revert_lists.0.id }}" frameborder="0" onload="this.height=this.contentWindow.document.body.scrollHeight+390"></iframe>
+        </div>
+
+
+        <!--显示表格 style="display:none;"-->
+        <div id="show_tables"  class="grid_6">
+            <div id="test_show_to">
+                <h3>当前模块接口列表：</h3>
+                <div style="margin-bottom: 5px;">
+                <button id="btnAdd" class="btn" onclick="run_list()">全部执行</button>
+                <a id="show_resu" class="btn" href="{% url "get_result" %}">查看执行结果</a>
+                <a id="show_resu2" class="btn" href="{% url "get_result" %}">查看历史执行结果</a>
+{#                <button id="btnRemove" class="btn" >删除第二行</button>#}
+{#                <button id="btnRemoveSelected" class="btn" >删除选择的行</button>#}
+{#                <button id="btnRemoveAll" class="btn" >删除全部行</button>#}
+{#                <button id="btnUpdate" class="btn" >更新第二行</button>#}
+{#                <input id="secucode" placeholder="查询条件:股票代码" style="margin-left: 20px;"> <button id="btnSearch" class="btn" >搜索</button>#}
+                </div>
+            </div>
+            <div id="test_case_to">
+                <h3>当前用例列表：</h3>
+            </div>
+            <div id="test_case_list">
+                <h3>用例列表：</h3>
+                    <div style="margin-bottom: 5px;">
+                        <a id="Add_" class="btn" href="#modal-container-589921" role="button" data-toggle="modal">新增步骤</a>
+                        <div id="modal-container-589921" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-left: 30%;width: 50%">
+                                    <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3 id="myModalLabel">
+                                            添加步骤
+                                        </h3>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="container-fluid">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                     <select id="to_select_data" class="form-control" name="carlist" style="width: 160px" onchange="show_mode_to()">
+                                                        <option value="to_fileread" title="用于上传文件,读取文件中数据">文件参数化</option>
+                                                        <option value="to_http">http请求</option>
+                                                        <option value="to_re">正则提取</option>
+                                                        <option value="to_json">json提取</option>
+                                                    </select>
+                                                    <form class="form-inline">
+                                                        <div id="to_fileread">
+                                                            <input id="to_file_Id1" class="file_Id" type="file" multiple="multiple" name="files" url2="{% url "add_files" %}" onchange="update_files(document.getElementById('update_file2'))"/>
+                                                            <ul class="file_lists">
+                                                            <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="" border="0" cellpadding="0" cellspacing="0" id="update_file2">
+                                                                <tr>
+                                                                    <th width="20" align="center" bgcolor="#EFEFEF" name="Nu"><input type="checkbox" name="checkbox" value="checkbox" /></th>
+                                                                    <th  width="100" bgcolor="#EFEFEF" Name="file_name" EditType="TextBox">name</th>
+                                                                    <th width="103" bgcolor="#EFEFEF" Name="md5" EditType="TextBox">MD5</th>
+                                                                    <th width="30" bgcolor="#EFEFEF" Name="button" EditType=""></th>
+                                                                </tr>
+
+                                                                {% for file in get_files %}
+                                                                <tr>
+                                                                    <td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>
+                                                                    <td>{{ file.0 }}</td>
+                                                                    <td>{{ file.1 }}</td>
+                                                                    <td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='file_Delete(this)' value='删除' /></td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                            </table>
+                                                            </ul>
+
+                                                            <div style="width: 100%">
+                                                                <h3 style="width: 100%">文件类型:
+                                                                    <select id="select_filedata" class="form-control" name="carlist" style="width: 160px">
+                                                                        <option id="sele_Excel">Excel文件类型</option>
+                                                                        <option id="sele_txt">文本类型</option>
+                                                                    </select>
+                                                                </h3>
+                                                            </div>
+                                                            <div style="width: 100%">
+                                                                <h3 style="width: 100%">是否忽略首行:
+                                                                    <select id="select_head" class="form-control" name="carlist" style="width: 160px">
+                                                                        <option id="sele_head_true">是</option>
+                                                                        <option id="sele_head_false">否</option>
+                                                                    </select>
+                                                                </h3>
+                                                            </div>
+                                                            <div style="width: 100%">
+                                                                <h3  style="width: 100%" >变量名：<input id="file_var_names" placeholder="变量名,多个用英文逗号分隔" type="text" style="height: 27px;width: 80%" /></h3>
+                                                            </div>
+                                                            <div style="width: 100%">
+                                                                <h3  style="width: 100%" >分割符：<input id="file_names" placeholder="文件行内容分隔符" type="text" style="height: 27px;width: 80%" /></h3>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div id="to_http" style="display: none;">
+                                                            <div>
+                                                                <a id="to_http" class="btn" href="#modal-tohttp-589921" role="button" data-toggle="modal">引 用</a>
+                                                                <div id="modal-tohttp-589921" class="modal" role="dialog" aria-labelledby="myModalLabel"  style="margin-left: 30%;width: 50%">
+                                                                    <table id="to_table" class="mmg" >
+                                                                        <tr>
+                                                                            <th rowspan="" colspan=""></th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 add-req-met" style="width: 104px;">
+                                                                <select id="to_http_data" class="form-control" name="carlist" style="width: 104px;">
+                                                                    {% if case_dat.req == "POST" %}
+                                                                        <option value="GET" >GET</option>
+                                                                        <option value="POST" selected='selected'>POST</option>
+
+                                                                    {% else %}
+                                                                        <option value="GET" selected='selected'>GET</option>
+                                                                        <option value="POST">POST</option>
+                                                                    {% endif %}
+
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class = "col-lg-8 add-req-url" style="">
+                                                                <input id="to_address" type="text" style="height: 33px;width: 100%;" class="form-control" name="url_address" placeholder="服务器地址" value="{{ case_dat.url }}">
+                                                             </div>
+                                                            <div class="btn-group send-req-data">
+                                                                <input type="button" class="btn" onclick="tofromdata(0)" value="验证"></input>
+                                                                <input type="button" class="btn" onclick="tofromdata(1)" value="保存"></input>
+
+                                                            </div>
+                                                            <div class="col-lg-12 " >
+                                                                 <h5>路径：<input id="to_address2" type="text" style="height: 33px;width: 70%;" class="" name="to_address2" placeholder="路径" value="{{ case_dat.url }}">
+                                                                </h5>
+                                                            </div>
+
+                                                            <div class="col-lg-12">
+
+                                                                    <div class="tabbable" id="to_tab-1609712">
+                                                                        <ul class="nav nav-tabs">
+                                                                            <li>
+                                                                                <a href="#to-648587" data-toggle="tab">Params</a>
+                                                                            </li>
+                                                                            <li class="active">
+                                                                                <a href="#to-666118" data-toggle="tab">Header</a>
+                                                                            </li>
+                                                                            <li >
+                                                                                <a href="#to-666218" data-toggle="tab">Body</a>
+                                                                            </li>
+                                                                            <li >
+                                                                                <a href="#to-666318" data-toggle="tab">assert</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#to-666378" data-toggle="tab">响应</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="tab-content">
+                                                                            <!--params-->
+                                                                            <div class="tab-pane" id="to-648587">
+                                                                                <div style="width: 80%;" id="to_par_none">
+
+                                                                                    <br />
+                                                        {#                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('tab_request_par'),1)" />#}
+                                                                                    <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('to_request_par'),1);" />
+                                                                                    <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('to_request_par'),1)" />
+                                                                                     <br>
+                                                                                    <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed"  border="0" cellpadding="0" cellspacing="0" id="to_request_par">
+                                                                                        <tr>
+                                                                                          <td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+                                                                {#                          <td width="186" bgcolor="#EFEFEF" Name="Num" EditType="TextBox">序号</td>#}
+                                                                                    {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                                                                          <td width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</td>
+                                                                                          <td width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</td>
+                                                                                          <td width="20" bgcolor="#EFEFEF" Name="" EditType="TextBox"></td>
+                                                                                        </tr>
+                                                                                        {% for case_dat_   in param_lis %}
+                                                                                            <tr>
+                                                                                                <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                                                                <td>{{ case_dat_.0 }}</td>
+
+                                                                                                <td>{{ case_dat_.1}}</td>
+                                                                                                <td><input type='button' name='' onclick='update_two_text(this)' value='修改' /></td>
+                                                                                            </tr>
+                                                                                        {% endfor %}
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <!--Header-->
+                                                                            <div class="tab-pane active" id="to-666118">
+                                                                                    <br />
+                                                    {#                            <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('tab_request_head'),1)" />#}
+                                                                                <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('to_request_head'),1)" />
+                                                                                <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('to_request_head'),1)" />
+                                                                                <br>
+                                                                                <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="698" border="0" cellpadding="0" cellspacing="0" id="to_request_head">
+                                                                                    <tr>
+                                                                                      <th width="10" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></th>
+
+                                                                                {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                                                                      <th width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</th>
+                                                                                      <th width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</th>
+                                                                                      <th width="20" bgcolor="#EFEFEF" Name="P" EditType="TextBox"></th>
+                                                                                    </tr>
+                                                                                    {% for header_dat in header_lis %}
+                                                                                        <tr>
+                                                                                            <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                                                            <td >{{ header_dat.0 }}</td>
+                                                                                            <td >{{ header_dat.1 }}</td>
+                                                                                            <td size='20' bgcolor='#FFFFFF'><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>
+                                                                                        </tr>
+
+                                                                                    {% endfor %}
+
+                                                                                </table>
+                                                                            </div>
+
+                                                                            <!--Body-->
+                                                                            <div class="tab-pane" id="to-666218">
+                                                                                 <div class="container_fluid">
+                                                                                    <div class="row-fluid">
+                                                                                        <div class="span12">
+                                                                                            <div class="tabbable" id="tabs-100007">
+                                                                                                <ul class="nav nav-tabs">
+                                                                                                    <li class="active">
+                                                    {#                                                    <a href="#to_formdata-0001" data-toggle="tab">Form-data</a>#}
+                                                                                                    </li>
+
+                                                                                                    <li >
+                                                                                                        <a href="#to-0002" data-toggle="tab">form</a>
+                                                    {#                                                    <a href="#panel-0002" data-toggle="tab">x-www-form-urlencoded</a>#}
+                                                    {#                                                    <a href="#panel-0002" data-toggle="tab">form-data for POST</a>#}
+                                                                                                    </li>
+
+                                                                                                    <li>
+                                                                                                        <a href="#to-0003" data-toggle="tab">file</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#to-0004" data-toggle="tab">josn</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                                <div class="tab-content">
+                                                                                                    <div class="tab-pane active" id="to_-0001">
+                                                                                                        <p>
+                                                                                {#							第一部分内容.#}
+                                                                                                        </p>
+                                                                                                        <br/>
+                                                                    {#                                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('form_data'),1)" />#}
+                                                                                                            <input type="button" name="Submit" value="新增" onclick="add_tables_formdata(document.getElementById('to_form_data'),1)" />
+                                                                                                            <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('to_form_data'),1)" />
+                                                                    {#                                        <input type="button" name="Submit3" value="删除" onclick="DeleteRow(document.getElementById('form_data'),1)" />#}
+                                                                                                        <br>
+                                                                                                            <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="" border="0" cellpadding="0" cellspacing="0" id="to_form_data">
+                                                                                                                <tr>
+                                                                                                                    <td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+                                                                                                                    <td  width="100" bgcolor="#EFEFEF" Name="key" EditType="TextBox">key</td>
+                                                                                                                    <td width="20" bgcolor="#EFEFEF" Name="key" EditType="DropDownList"
+                                                                                                                        DataItems="{text:'test',value:'test'},{text:'file',value:'file'}" style="width: 60px;"></td>
+                                                                                                                    <td width="103" bgcolor="#EFEFEF" Name="values" EditType="TextBox">values</td>
+                                                                                                                    <td width="30" bgcolor="#EFEFEF" Name="vt_button" EditType=""></td>
+                                                                                                                </tr>
+
+                                                                                                            {% if case_dat.way_body == 'form_data' %}
+                                                                                                            {% for body_list in body_lists %}
+                                                                                                                    <tr>
+                                                                                                                        <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                                                                                        <td >{{ body_list.keys }}</td>
+                                                                                                                        <td>{{ body_list.text_file }}</td>
+                                                                                                                        {% if body_list.text_file == 'file' %}
+                                                                                                                            <td><input type='file'  value='' size='' /></td>
+                                                                                                                        {% else %}
+                                                                                                                            <td>{{ body_list.values }}</td>
+                                                                                                                        {% endif %}
+
+                                                                                                                        <td ><input type='button' name='' id='' onclick='update_form_dat(this)' value='修改' /></td>
+                                                                                                                    </tr>
+                                                                                                                {% endfor %}
+                                                                                                            {% endif %}
+
+                                                                                                            </table>
+
+                                                                                                    </div>
+                                                                                                    <div class="tab-pane" id="to-0002">
+                                                                                                        <p>
+                                                                                {#							第二部分内容.#}
+                                                                                                        </p>
+
+                                                                                                        <br />
+                                                                    {#                                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('application_x_w'),1)" />#}
+                                                                                                            <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('to_application_x_w'),1)" />
+                                                                                                            <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('to_application_x_w'),1)" />
+                                                                                                         <br>
+                                                                                                    <table style="table-layout: fixed;"  class="table table-hover table-bordered table-condensed" width="698" border="0" cellpadding="0" cellspacing="0" id="to_application_x_w">
+                                                                                                        <tr>
+                                                                                                          <td width="10" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+
+                                                                                                    {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                                                                                          <td width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</td>
+                                                                                                          <td width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</td>
+                                                                                                          <td width="20" bgcolor="#EFEFEF" Name="" EditType="TextBox"></td>
+                                                                                                        </tr>
+                                                                                                    {% if case_dat.way_body == 'application_x_w' %}
+                                                                                                        {% for body_li in body_lists %}
+                                                                                                        <tr>
+                                                                                                        <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                                                                        <td>{{ body_li.0 }}</td>
+                                                                                                        <td>{{ body_li.1 }}</td>
+                                                                                                        <td size='20' bgcolor='#FFFFFF'><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>
+                                                                                                        </tr>
+                                                                                                        {% endfor %}
+                                                                                                    {% endif %}
+
+                                                                                                    </table>
+                                                                                                    </div>
+
+
+                                                                                                    <div class="tab-pane" id="to-0003">
+                                                                                {#                            <span>上传</span>#}
+
+                                                                                                        <input id="to_http_file_Id1" class="file_Id" type="file" multiple="multiple" name="files" url2="{% url "add_files" %}" onchange="update_files(document.getElementById('to_file2'))"/>
+                                                                                                        <ul class="file_lists">
+                                                                                                            <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="" border="0" cellpadding="0" cellspacing="0" id="to_file2">
+                                                                                                                <tr>
+                                                                                                                    <th width="20" align="center" bgcolor="#EFEFEF" name="Nu"><input type="checkbox" name="checkbox" value="checkbox" /></th>
+                                                                                                                    <th  width="100" bgcolor="#EFEFEF" Name="file_name" EditType="TextBox">name</th>
+                                                                                                                    <th width="103" bgcolor="#EFEFEF" Name="md5" EditType="TextBox">MD5</th>
+                                                                                                                    <th width="30" bgcolor="#EFEFEF" Name="button" EditType=""></th>
+                                                                                                                </tr>
+
+                                                                                                                {% for file in get_files %}
+                                                                                                                <tr>
+                                                                                                                    <td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>
+                                                                                                                    <td>{{ file.0 }}</td>
+                                                                                                                    <td>{{ file.1 }}</td>
+                                                                                                                    <td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='file_Delete(this)' value='删除' /></td>
+                                                                                                                </tr>
+                                                                                                            {% endfor %}
+                                                                                                            </table>
+
+
+                                                                                                        </ul>
+                                                                                                    </div>
+
+
+                                                                                                    <div class="tab-pane" id="to-0004" >
+                                                                                                        <textarea id="to_json"  type="text" class="req_textarea" style="width: 800px;background-color: #373737; height: 300px;
+                                                                                                        padding-top: 10px; padding-right: 10px; padding-left: 10px; padding-bottom: 10px;
+                                                                                                        overflow: auto; color: #000000; font-size: 16px;background-color:#f5f5f5;"></textarea>
+
+                                                                                                    </div>
+
+
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                            </div>
+
+                                                                            <!--assert-->
+                                                                            <div class="tab-pane" id="to-666318">
+                                                                                   <input type="button" name="Submit" value="新增" onclick="add_tables_assert(document.getElementById('tab_req_assert'),[{
+                                                                                        'text':'assertEqual','value':'assertEqual'},{'text':'assertNotEqual','value':'assertNotEqual'},{ 'text':'assertIn','value':'assertIn'},{'text':'assertNotIn','value':'assertNotIn'}])" />
+                                                                                    <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('tab_req_assert'),1)" />
+                                                                                {#  <input type="button" name="Submit3" value="验证" onclick="to_req_assert()" />#}
+                                                                                    <input type="button" name="Submit3" value="help" onclick="get_ass_help()" />
+                                                                                <br>
+                                                                                <p id="tab_get_assert_req"></p>
+
+                                                                                <table style="table-layout: fixed;" class="table table-hover table-bordered table-condensed" width="100%" border="0" cellpadding="0" cellspacing="0" id="tab_req_assert2">
+                                                                                    <tr>
+                                                                                      <th width="10" align="center" bgcolor="#EFEFEF" name="Num">
+                                                                                          <input type="checkbox" name="checkbox" value="checkbox" />
+                                                                                      </th>
+                                                                                      <th width="55" bgcolor="#EFEFEF" Name="assert_name" EditType="DropDownList" DataItems='{
+                                                                                            text:"assertEqual",value:"assertEqual"},{text:"assertNotEqual",value:"assertNotEqual"},{ text:"assertIn",value:"assertIn"},{text:"assertNotIn",value:"assertNotIn"}'>断言</th>
+                                                                                      <th width="115" bgcolor="#EFEFEF" Name="left_data" EditType="TextBox">实际</th>
+                                                                                      <th width="30" bgcolor="#EFEFEF" Name="right_int" EditType="DropDownList" DataItems="{text:'int',value:'int'},{text:'str', value:'str'},{text:'json', value:'json'}">数据类型</th>
+                                                                                      <th width="120" bgcolor="#EFEFEF" Name="right_data" EditType="TextBox">预期</th>
+                                                                                      <th width="25" bgcolor="#EFEFEF" Name="" EditType="TextBox"></th>
+                                                                                    </tr>
+                                                                                    {% for assert_li in assert_list %}
+                                                                                        <tr>
+                                                                                            <td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>
+                                                                                            <td>{{ assert_li.assert_name }}</td>
+                                                                                            <td>{{ assert_li.left_contrast }}</td>
+                                                                                            <td>{{ assert_li.right_contrast_int }}</td>
+                                                                                            <td>{{ assert_li.right_contrast }}</td>
+                                                                                            <td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='update_tables_assert(this)' value='修改' /></td></tr>
+                                                                                    {% endfor %}
+                                                                                </table>
+                                                                            </div>
+
+                                                                            <!---->
+                                                                            <div class="tab-pane" id="to-666378" style="width:100%; font-family: Verdana;">
+                                                                                <textarea id="to_response_"  type="text" class="req_textarea" style="width: 800px;background-color: #373737; height: 300px;
+                                                                                padding-top: 10px; padding-right: 10px; padding-left: 10px; padding-bottom: 10px;
+                                                                                overflow: auto; color: #000000; font-size: 16px;background-color:#f5f5f5;"></textarea>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                        <!-- 添加http 末尾标记-->
+                                                        </div>
+                                                    <fieldset>
+                                                         <label>分类名：</label><input id="model_pro_name2" type="text" style="height: 27px;" />
+                                                        <span class="help-block">描述：.</span>
+                                                        <textarea id="model_pro_text2" cols="30" rows="10" style="width: 100%"></textarea>
+                {#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                                    </fieldset>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                         <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="to_project()">保存设置</button>
+                                    </div>
+                                </div>
+{#                        <a id="show_resu" class="btn" href="{% url "get_result" %}">查看执行结果</a>#}
+{#                        <a id="show_resu2" class="btn" href="{% url "get_result" %}">查看历史执行结果</a>#}
+                    </div>
+            </div>
+
+            <table id="table2-2" class="mmg" >
+                <tr>
+                    <th rowspan="" colspan=""></th>
+                </tr>
+            </table>
+            <div id="pg" style="text-align: right;"></div>
+        </div>
+
+        <!--显示接口等内容详情-->
+        <div id="show_details" style="display:none;">
+            <form action="" id="add_req">
+                <div class="col-lg-12">
+
+                    <div id="add_req_name" value="" style="width: 100%;">
+
+{#                        <h5 id="add_of" style="width:100%;height: 26px;float: left" value={{ inter_name }} >接口属于：项目：{{ pro_name }}，模块：{{ inter_name }}</h5>#}
+                        <h5 style="width: 50%;float: left;">接口名称：<input type="text" disabled value="{{ case_dat.name }}" style="width:40%;height: 26px;"></h5>
+                    </div>
+                    <div style="width: 50%;float: left;" class="" id="add_req_agreement">
+                        <h5>协议：<input value="" disabled>
+{#                            <select id="req_data1"  name="carlist" style="width: 100px;">#}
+{#                                 <!--selected='selected'-->#}
+{#                                <option value="HTTP" selected='selected'>HTTP</option>#}
+{#                                <option value="HTTPS" >HTTPS</option>#}
+{#                                <option value="3" >3</option>#}
+{#                             </select>#}
+
+                        </h5>
+                    </div>
+
+                <div>
+
+{#                <h5 style="width:30%;height: 26px;float: left">接口属于：{{ inter_name }}</h5>#}
+                </div>
+                <div id="add_req_texts">
+{#                    <h5 style="width: 100%">描述：<a href="#" style="color:#A0A0A0" onclick="up_describe()" value=""> 修改</a></h5>#}
+
+
+                </div>
+                <div>
+                    <textarea name="" id="describe_text" cols="30" rows="10" style="height: 150px;width: 80%;display:none;"></textarea>
+                    <p id="describe_text_show" style="color:#00c4ff" >{{ case_dat.describe }}</p>
+                </div>
+            </div>
+            >
+            <div class="col-lg-12">
+                <div class="col-lg-3 add-req-met">
+                    <select id="req_data" class="form-control" name="carlist" style="width: 90px">
+                        {% if case_dat.req == "POST" %}
+                            <option value="GET" >GET</option>
+                            <option value="POST" selected='selected'>POST</option>
+
+                        {% else %}
+                            <option value="GET" selected='selected'>GET</option>
+                            <option value="POST">POST</option>
+                        {% endif %}
+
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class = "col-lg-8 add-req-url">
+                    <input id="url_address" type="text" style="height: 33px" class="form-control" name="url_address" placeholder="服务器地址" value="{{ case_dat.url }}">
+                 </div>
+                <div class="btn-group send-req-data">
+                    <input type="button" class="btn" onclick="tofromdata(0)" value="验证"></input>
+                    <input type="button" class="btn" onclick="tofromdata(1)" value="保存"></input>
+
+                </div>
+                <div class="col-lg-12 " >
+                     <h5>路径：<input id="url_address2" type="text" style="height: 33px;width: 70%;" class="" name="url_address2" placeholder="路径" value="{{ case_dat.url }}">
+                    </h5>
+                </div>
+
+{#            <div class="add-req-par">#}
+{#                <input type="button" class="btn btn-default" onclick="on_params()" value="Params"></input>#}
+{#            </div>#}
+            <div class="col-lg-12">
+
+                <div class="tabbable" id="tabs-609712">
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a href="#panel-648587" data-toggle="tab">Params</a>
+                        </li>
+                        <li class="active">
+                            <a href="#panel-666118" data-toggle="tab">Header</a>
+                        </li>
+                        <li >
+                            <a href="#panel-666218" data-toggle="tab">Body</a>
+                        </li>
+                        <li >
+                            <a href="#panel-666318" data-toggle="tab">assert</a>
+                        </li>
+                        <li>
+                            <a href="#panel-666378" data-toggle="tab">响应</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!--params-->
+                        <div class="tab-pane" id="panel-648587">
+                            <div style="width: 80%;" id="par_none">
+
+                            <br />
+{#                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('tab_request_par'),1)" />#}
+                            <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('tab_request_par'),1);" />
+                            <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('tab_request_par'),1)" />
+                             <br>
+                            <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed"  border="0" cellpadding="0" cellspacing="0" id="tab_request_par">
+                                <tr>
+                                  <td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+        {#                          <td width="186" bgcolor="#EFEFEF" Name="Num" EditType="TextBox">序号</td>#}
+                            {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                  <td width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</td>
+                                  <td width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</td>
+                                  <td width="20" bgcolor="#EFEFEF" Name="" EditType="TextBox"></td>
+                                </tr>
+                                {% for case_dat_   in param_lis %}
+                                    <tr>
+                                        <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                        <td>{{ case_dat_.0 }}</td>
+
+                                        <td>{{ case_dat_.1}}</td>
+                                        <td><input type='button' name='' onclick='update_two_text(this)' value='修改' /></td>
+                                    </tr>
+                                {% endfor %}
+
+{#                        <tr>#}
+{#                          <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>#}
+{#                          <td bgcolor="#FFFFFF">1</td>#}
+                    {#      <td bgcolor="#FFFFFF" Value="c">C</td>#}
+{#                          <td bgcolor="#FFFFFF"></td>#}
+{#                          <td bgcolor="#FFFFFF"></td>#}
+                    {#      <td bgcolor="#FFFFFF">0</td>#}
+{#                        </tr>#}
+                    </table>
+                </div>
+                        </div>
+
+                        <!--Header-->
+                        <div class="tab-pane active" id="panel-666118">
+                                <br />
+{#                            <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('tab_request_head'),1)" />#}
+                            <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('tab_request_head'),1)" />
+                            <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('tab_request_head'),1)" />
+                            <br>
+                            <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="698" border="0" cellpadding="0" cellspacing="0" id="tab_request_head">
+                                <tr>
+                                  <th width="10" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></th>
+
+                            {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                  <th width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</th>
+                                  <th width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</th>
+                                  <th width="20" bgcolor="#EFEFEF" Name="P" EditType="TextBox"></th>
+                                </tr>
+                                {% for header_dat in header_lis %}
+                                    <tr>
+                                        <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                        <td >{{ header_dat.0 }}</td>
+                                        <td >{{ header_dat.1 }}</td>
+                                        <td size='20' bgcolor='#FFFFFF'><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>
+                                    </tr>
+
+                                {% endfor %}
+
+        {#                        <tr>#}
+        {#                          <td width="10" align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>#}
+                            {#      <td bgcolor="#FFFFFF" Value="c">C</td>#}
+        {#                          <td bgcolor="#FFFFFF"></td>#}
+        {#                          <td bgcolor="#FFFFFF"></td>#}
+                            {#      <td bgcolor="#FFFFFF">0</td>#}
+        {#                        </tr>#}
+                            </table>
+                        </div>
+
+                        <!--Body-->
+                        <div class="tab-pane" id="panel-666218">
+                             <div class="container_fluid">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="tabbable" id="tabs-100007">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+{#                                                    <a href="#formdata-0001" data-toggle="tab">Form-data</a>#}
+                                                </li>
+
+                                                <li >
+                                                    <a href="#panel-0002" data-toggle="tab">form</a>
+{#                                                    <a href="#panel-0002" data-toggle="tab">x-www-form-urlencoded</a>#}
+{#                                                    <a href="#panel-0002" data-toggle="tab">form-data for POST</a>#}
+                                                </li>
+
+                                                <li>
+                                                    <a href="#panel-0003" data-toggle="tab">file</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#panel-0004" data-toggle="tab">josn</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="formdata-0001">
+                                                    <p>
+                            {#							第一部分内容.#}
+                                                    </p>
+                                                    <br/>
+                {#                                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('form_data'),1)" />#}
+                                                        <input type="button" name="Submit" value="新增" onclick="add_tables_formdata(document.getElementById('form_data'),1)" />
+                                                        <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('form_data'),1)" />
+                {#                                        <input type="button" name="Submit3" value="删除" onclick="DeleteRow(document.getElementById('form_data'),1)" />#}
+                                                    <br>
+                                                        <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="" border="0" cellpadding="0" cellspacing="0" id="form_data">
+                                                            <tr>
+                                                                <td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+                                                                <td  width="100" bgcolor="#EFEFEF" Name="key" EditType="TextBox">key</td>
+                                                                <td width="20" bgcolor="#EFEFEF" Name="key" EditType="DropDownList"
+                                                                    DataItems="{text:'test',value:'test'},{text:'file',value:'file'}" style="width: 60px;"></td>
+                                                                <td width="103" bgcolor="#EFEFEF" Name="values" EditType="TextBox">values</td>
+                                                                <td width="30" bgcolor="#EFEFEF" Name="vt_button" EditType=""></td>
+                                                            </tr>
+
+                                                        {% if case_dat.way_body == 'form_data' %}
+                                                        {% for body_list in body_lists %}
+                                                                <tr>
+                                                                    <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                                    <td >{{ body_list.keys }}</td>
+                                                                    <td>{{ body_list.text_file }}</td>
+                                                                    {% if body_list.text_file == 'file' %}
+                                                                        <td><input type='file'  value='' size='' /></td>
+                                                                    {% else %}
+                                                                        <td>{{ body_list.values }}</td>
+                                                                    {% endif %}
+
+                                                                    <td ><input type='button' name='' id='' onclick='update_form_dat(this)' value='修改' /></td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                        {% endif %}
+
+
+                {#                                            <tr>#}
+                {#                                                <td width="32" align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>#}
+                {#                                                <td bgcolor="#FFFFFF"  width="40%"></td>#}
+                {#                                                <td bgcolor="#FFFFFF" width="20" Value="test">test</td>#}
+                {#                                                <td width="103" bgcolor="#FFFFFF" width="40%"></td>#}
+                {#                                                <td width="20" bgcolor="#FFFFFF" width="10%"></td>#}
+                {#                                            </tr>#}
+                                                        </table>
+
+                                                </div>
+                                                <div class="tab-pane" id="panel-0002">
+                                                    <p>
+                            {#							第二部分内容.#}
+                                                    </p>
+
+                                                    <br />
+                {#                                        <input type="button" name="Submit" value="新增" onclick="AddRow(document.getElementById('application_x_w'),1)" />#}
+                                                        <input type="button" name="Submit" value="新增" onclick="add_two_text(document.getElementById('application_x_w'),1)" />
+                                                        <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('application_x_w'),1)" />
+                                                     <br>
+                                                <table style="table-layout: fixed;"  class="table table-hover table-bordered table-condensed" width="698" border="0" cellpadding="0" cellspacing="0" id="application_x_w">
+                                                    <tr>
+                                                      <td width="10" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>
+
+                                                {#      <td width="152" bgcolor="#EFEFEF" Name="ProductName" EditType="DropDownList" DataItems="{text:'A',value:'a'},{text:'B',value:'b'},{text:'C',value:'c'},{text:'D',value:'d'}">商品名称</td>#}
+                                                      <td width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</td>
+                                                      <td width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</td>
+                                                      <td width="20" bgcolor="#EFEFEF" Name="" EditType="TextBox"></td>
+                                                    </tr>
+                                                {% if case_dat.way_body == 'application_x_w' %}
+                                                    {% for body_li in body_lists %}
+                                                    <tr>
+                                                    <td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>
+                                                    <td>{{ body_li.0 }}</td>
+                                                    <td>{{ body_li.1 }}</td>
+                                                    <td size='20' bgcolor='#FFFFFF'><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>
+                                                    </tr>
+                                                    {% endfor %}
+                                                {% endif %}
+
+                {#                                    <tr>#}
+                {#                                      <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>#}
+                {#                                      <td bgcolor="#FFFFFF"></td>#}
+                {#                                      <td bgcolor="#FFFFFF"></td>#}
+                {#                                    </tr>#}
+                                                </table>
+                                                </div>
+
+
+                                                <div class="tab-pane" id="panel-0003">
+                            {#                            <span>上传</span>#}
+
+                                                    <input id="file_Id1" class="file_Id" type="file" multiple="multiple" name="files" url2="{% url "add_files" %}" onchange="update_files(document.getElementById('update_file2'))"/>
+                                                    <ul class="file_lists">
+                                                        <table style="TABLE-LAYOUT: fixed;" class="table table-hover table-bordered table-condensed" width="" border="0" cellpadding="0" cellspacing="0" id="update_file2">
+                                                            <tr>
+                                                                <th width="20" align="center" bgcolor="#EFEFEF" name="Nu"><input type="checkbox" name="checkbox" value="checkbox" /></th>
+                                                                <th  width="100" bgcolor="#EFEFEF" Name="file_name" EditType="TextBox">name</th>
+                                                                <th width="103" bgcolor="#EFEFEF" Name="md5" EditType="TextBox">MD5</th>
+                                                                <th width="30" bgcolor="#EFEFEF" Name="button" EditType=""></th>
+                                                            </tr>
+
+                                                            {% for file in get_files %}
+                                                            <tr>
+                                                                <td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>
+                                                                <td>{{ file.0 }}</td>
+                                                                <td>{{ file.1 }}</td>
+                                                                <td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='file_Delete(this)' value='删除' /></td>
+                                                            </tr>
+                                                        {% endfor %}
+                                                        </table>
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                                <div class="tab-pane" id="panel-0004" >
+                                                    <textarea id="req_json"  type="text" class="req_textarea" style="width: 800px;background-color: #373737; height: 300px;
+                                                    padding-top: 10px; padding-right: 10px; padding-left: 10px; padding-bottom: 10px;
+                                                    overflow: auto; color: #000000; font-size: 16px;background-color:#f5f5f5;"></textarea>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+
+                        <!--assert-->
+                        <div class="tab-pane" id="panel-666318">
+                               <input type="button" name="Submit" value="新增" onclick="add_tables_assert(document.getElementById('tab_req_assert'),[{
+            'text':'assertEqual','value':'assertEqual'},{'text':'assertNotEqual','value':'assertNotEqual'},{ 'text':'assertIn','value':'assertIn'},{'text':'assertNotIn','value':'assertNotIn'}])" />
+                                <input type="button" name="Submit2" value="删除" onclick="DeleteRow(document.getElementById('tab_req_assert'),1)" />
+                            {#  <input type="button" name="Submit3" value="验证" onclick="to_req_assert()" />#}
+                                <input type="button" name="Submit3" value="help" onclick="get_ass_help()" />
+                            <br>
+                            <p id="tab_get_assert_req"></p>
+
+                            <table style="table-layout: fixed;" class="table table-hover table-bordered table-condensed" width="100%" border="0" cellpadding="0" cellspacing="0" id="tab_req_assert">
+                                <tr>
+                                  <th width="10" align="center" bgcolor="#EFEFEF" name="Num">
+                                      <input type="checkbox" name="checkbox" value="checkbox" />
+                                  </th>
+            {#                      <td width="186" bgcolor="#EFEFEF" Name="Num" >序号</td>#}
+                                  <th width="55" bgcolor="#EFEFEF" Name="assert_name" EditType="DropDownList" DataItems='{
+text:"assertEqual",value:"assertEqual"},{text:"assertNotEqual",value:"assertNotEqual"},{ text:"assertIn",value:"assertIn"},{text:"assertNotIn",value:"assertNotIn"}'>断言</th>
+                                  <th width="115" bgcolor="#EFEFEF" Name="left_data" EditType="TextBox">实际</th>
+                                  <th width="30" bgcolor="#EFEFEF" Name="right_int" EditType="DropDownList" DataItems="{text:'int',value:'int'},{text:'str', value:'str'},{text:'json', value:'json'}">数据类型</th>
+                                  <th width="120" bgcolor="#EFEFEF" Name="right_data" EditType="TextBox">预期</th>
+                                  <th width="25" bgcolor="#EFEFEF" Name="" EditType="TextBox"></th>
+                                </tr>
+                                {% for assert_li in assert_list %}
+                                    <tr>
+                                        <td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>
+                                        <td>{{ assert_li.assert_name }}</td>
+                                        <td>{{ assert_li.left_contrast }}</td>
+                                        <td>{{ assert_li.right_contrast_int }}</td>
+                                        <td>{{ assert_li.right_contrast }}</td>
+                                        <td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='update_tables_assert(this)' value='修改' /></td></tr>
+                                {% endfor %}
+
+            {#                    <tr width="100%">#}
+            {#                        align="center" #}
+            {#                        <td bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>#}
+            {#                      <td bgcolor="#FFFFFF">1</td>#}
+            {#                        onchange="select_assert()"#}
+            {#                        <td bgcolor="#FFFFFF"  value="" title=""></td>#}
+            {#                        <td style="max-width:40px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></td>#}
+            {#                        <td bgcolor="#FFFFFF"></td>#}
+            {#                        <td bgcolor="#FFFFFF"></td>#}
+            {#                      <td bgcolor="#FFFFFF">0</td>#}
+            {#                    </tr>#}
+                            </table>
+                        </div>
+
+                        <!---->
+                        <div class="tab-pane" id="panel-666378" style="width:100%; font-family: Verdana;">
+                            <textarea id="req_response_"  type="text" class="req_textarea" style="width: 800px;background-color: #373737; height: 300px;
+                            padding-top: 10px; padding-right: 10px; padding-left: 10px; padding-bottom: 10px;
+                            overflow: auto; color: #000000; font-size: 16px;background-color:#f5f5f5;"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+
+     <div id="modal-container-576635" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-left: 30%;">
+				<div class="modal-header">
+					 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="task_Label">
+						添加任务
+					</h3>
+				</div>
+				<div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <form class="form-inline">
+                                    <fieldset>
+                                         <label>任务名：</label><input id="task_name" type="text" style="height: 27px;" />
+                                         <div style="width: 100%;float: left;" class="add-req-met">
+                                            <h5>协议：<select id="task_agreement"  name="carlist" style="width: 100px;">
+                                                     <!--selected='selected'-->
+                                                    <option value="HTTP" selected='selected'>HTTP</option>
+                                                    <option value="HTTPS" >HTTPS</option>
+                                                    </select>
+                                            </h5>
+                                        </div>
+                                        <span class="help-block">备注：</span>
+                                        <textarea id="task_text" cols="30" rows="10" style="width: 100%"></textarea>
+{#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="modal-footer">
+					 <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="save_taskName()">保存设置</button>
+				</div>
+			</div>
+</div>
+
+<script>
+
+
+
+            $(document).ready(function(){
+
+                var to_url =document.getElementById("show_resu2").href;
+                var url_id = getUrlParam('id');
+                var urid = getUrlParam('urid');
+                var ctd = getUrlParam('ctd');
+                var ctd_list = getUrlParam('ctd_list');
+                document.getElementById("show_resu2").href=to_url+"?id="+url_id+"&urid="+urid;
+
+                {#var items = [{AMPLITUDE:0.9309,PREVCLOSINGPRICE:7.52,TURNOVERDEALS:0,HIGHESTPRICE:7.56,TURNOVERVOL:36268940,TRADINGDAY:1345478400000,TOTALSHARE:18653471415,SECUCODE:"600000",EPS:0.9217,LOWESTPRICE:7.49,OPENINGPRICE:7.51,SECUABBR:"浦发银行",ALISTEDSHARE:14922777132,ID:3131258,WCOSTAVG:8.7968,NETCASHFLOWOPERPS:1.125,SECUNAME:"上海浦东发展银行股份有限公司",CLOSINGPRICE:7.51,DAYCHANGERATE:-0.133,TURNOVERVAL:272732527,BVPS:8.686,DAYCHANGE:-0.01,PE:5.134,TURNOVERRATE:0.243,ADJUSTCLOSINGPRICE:51.8586,PB:0.9409},{AMPLITUDE:2.0472,PREVCLOSINGPRICE:6.35,TURNOVERDEALS:0,HIGHESTPRICE:6.41,TURNOVERVOL:1278011,TRADINGDAY:1345478400000,TOTALSHARE:1150000000,SECUCODE:"600004",EPS:0.1567,LOWESTPRICE:6.28,OPENINGPRICE:6.34,SECUABBR:"白云机场",ALISTEDSHARE:1150000000,ID:3131387,WCOSTAVG:6.8846,NETCASHFLOWOPERPS:0.23,SECUNAME:"广州白云国际机场股份有限公司",CLOSINGPRICE:6.39,DAYCHANGERATE:0.6299,TURNOVERVAL:8115183,BVPS:6.13,DAYCHANGE:0.04,PE:10.5415,TURNOVERRATE:0.1111,ADJUSTCLOSINGPRICE:9.429,PB:1.0697},{AMPLITUDE:1.5504,PREVCLOSINGPRICE:2.58,TURNOVERDEALS:0,HIGHESTPRICE:2.61,TURNOVERVOL:10685141,TRADINGDAY:1345478400000,TOTALSHARE:10093779823,SECUCODE:"600005",EPS:0.0043,LOWESTPRICE:2.57,OPENINGPRICE:2.59,SECUABBR:"武钢股份",ALISTEDSHARE:10093779823,ID:3131671,WCOSTAVG:3.0629,NETCASHFLOWOPERPS:0.09,SECUNAME:"武汉钢铁股份有限公司",CLOSINGPRICE:2.6,DAYCHANGERATE:0.7752,TURNOVERVAL:27677196,BVPS:3.562,DAYCHANGE:0.02,PE:24.2193,TURNOVERRATE:0.1059,ADJUSTCLOSINGPRICE:13.4817,PB:0.7308},{AMPLITUDE:2.069,PREVCLOSINGPRICE:2.9,TURNOVERDEALS:0,HIGHESTPRICE:2.95,TURNOVERVOL:2511165,TRADINGDAY:1345478400000,TOTALSHARE:2000000000,SECUCODE:"600006",EPS:0.0266,LOWESTPRICE:2.89,OPENINGPRICE:2.9,SECUABBR:"东风汽车",ALISTEDSHARE:2000000000,ID:3131903,WCOSTAVG:3.5362,NETCASHFLOWOPERPS:-0.4041,SECUNAME:"东风汽车股份有限公司",CLOSINGPRICE:2.9,DAYCHANGERATE:0,TURNOVERVAL:7316381,BVPS:3.0533,DAYCHANGE:0,PE:12.4963,TURNOVERRATE:0.1256,ADJUSTCLOSINGPRICE:10.0741,PB:0.9581},{AMPLITUDE:1.9704,PREVCLOSINGPRICE:10.15,TURNOVERDEALS:0,HIGHESTPRICE:10.35,TURNOVERVOL:155609,TRADINGDAY:1345478400000,TOTALSHARE:1007282534,SECUCODE:"600007",EPS:0.0887,LOWESTPRICE:10.15,OPENINGPRICE:10.15,SECUABBR:"中国国贸",ALISTEDSHARE:1007282534,ID:3132032,WCOSTAVG:9.8783,NETCASHFLOWOPERPS:0.22,SECUNAME:"中国国际贸易中心股份有限公司",CLOSINGPRICE:10.26,DAYCHANGERATE:1.0837,TURNOVERVAL:1599848,BVPS:4.5,DAYCHANGE:0.11,PE:53.2288,TURNOVERRATE:0.0154,ADJUSTCLOSINGPRICE:16.142,PB:2.3261},{AMPLITUDE:2.7211,PREVCLOSINGPRICE:4.41,TURNOVERDEALS:0,HIGHESTPRICE:4.53,TURNOVERVOL:3872525,TRADINGDAY:1345478400000,TOTALSHARE:2200000000,SECUCODE:"600008",EPS:0.0714,LOWESTPRICE:4.41,OPENINGPRICE:4.42,SECUABBR:"首创股份",ALISTEDSHARE:2200000000,ID:3131442,WCOSTAVG:5.2878,NETCASHFLOWOPERPS:0.055,SECUNAME:"北京首创股份有限公司",CLOSINGPRICE:4.49,DAYCHANGERATE:1.8141,TURNOVERVAL:17341208,BVPS:2.3832,DAYCHANGE:0.08,PE:18.8918,TURNOVERRATE:0.176,ADJUSTCLOSINGPRICE:15.1655,PB:1.8324},{AMPLITUDE:0.7389,PREVCLOSINGPRICE:12.18,TURNOVERDEALS:0,HIGHESTPRICE:12.22,TURNOVERVOL:1332194,TRADINGDAY:1345478400000,TOTALSHARE:1926958448,SECUCODE:"600009",EPS:0.1909,LOWESTPRICE:12.13,OPENINGPRICE:12.19,SECUABBR:"上海机场",ALISTEDSHARE:1093476397,ID:3131171,WCOSTAVG:12.8369,NETCASHFLOWOPERPS:-0.04,SECUNAME:"上海国际机场股份有限公司",CLOSINGPRICE:12.14,DAYCHANGERATE:-0.3284,TURNOVERVAL:16207539,BVPS:8.16,DAYCHANGE:-0.04,PE:15.5997,TURNOVERRATE:0.1218,ADJUSTCLOSINGPRICE:33.1878,PB:1.523},{AMPLITUDE:3.9604,PREVCLOSINGPRICE:6.06,TURNOVERDEALS:0,HIGHESTPRICE:6.11,TURNOVERVOL:95948038,TRADINGDAY:1345478400000,TOTALSHARE:6423643659,SECUCODE:"600010",EPS:0.0017,LOWESTPRICE:5.87,OPENINGPRICE:6.06,SECUABBR:"包钢股份",ALISTEDSHARE:6423643659,ID:3133528,WCOSTAVG:5.6692,NETCASHFLOWOPERPS:-0.09,SECUNAME:"内蒙古包钢钢联股份有限公司",CLOSINGPRICE:5.99,DAYCHANGERATE:-1.1551,TURNOVERVAL:572896242,BVPS:2.01,DAYCHANGE:-0.07,PE:77.53,TURNOVERRATE:1.4937,ADJUSTCLOSINGPRICE:17.6883,PB:2.9846},{AMPLITUDE:2.0864,PREVCLOSINGPRICE:6.71,TURNOVERDEALS:0,HIGHESTPRICE:6.8,TURNOVERVOL:8203502,TRADINGDAY:1345478400000,TOTALSHARE:14055383440,SECUCODE:"600011",EPS:0.1571,LOWESTPRICE:6.66,OPENINGPRICE:6.78,SECUABBR:"华能国际",ALISTEDSHARE:10000000000,ID:3132159,WCOSTAVG:5.7905,NETCASHFLOWOPERPS:0.91,SECUNAME:"华能国际电力股份有限公司",CLOSINGPRICE:6.68,DAYCHANGERATE:-0.4471,TURNOVERVAL:55167434,BVPS:3.66,DAYCHANGE:-0.03,PE:74.0314,TURNOVERRATE:0.082,ADJUSTCLOSINGPRICE:23.7094,PB:1.875},{AMPLITUDE:0.7712,PREVCLOSINGPRICE:3.89,TURNOVERDEALS:0,HIGHESTPRICE:3.91,TURNOVERVOL:418515,TRADINGDAY:1345478400000,TOTALSHARE:1658610000,SECUCODE:"600012",EPS:0.1278,LOWESTPRICE:3.88,OPENINGPRICE:3.89,SECUABBR:"皖通高速",ALISTEDSHARE:1165600000,ID:3133590,WCOSTAVG:4.4675,NETCASHFLOWOPERPS:0.25,SECUNAME:"安徽皖通高速公路股份有限公司",CLOSINGPRICE:3.9,DAYCHANGERATE:0.2571,TURNOVERVAL:1632075,BVPS:3.8226,DAYCHANGE:0.01,PE:7.5503,TURNOVERRATE:0.0359,ADJUSTCLOSINGPRICE:6.945,PB:1.0322},{AMPLITUDE:0.8037,PREVCLOSINGPRICE:8.71,TURNOVERDEALS:0,HIGHESTPRICE:8.75,TURNOVERVOL:14473038,TRADINGDAY:1345478400000,TOTALSHARE:6849725776,SECUCODE:"600015",EPS:0.8869,LOWESTPRICE:8.68,OPENINGPRICE:8.71,SECUABBR:"华夏银行",ALISTEDSHARE:4990528316,ID:3133403,WCOSTAVG:10.581,NETCASHFLOWOPERPS:2,SECUNAME:"华夏银行股份有限公司",CLOSINGPRICE:8.7,DAYCHANGERATE:-0.1148,TURNOVERVAL:126109959,BVPS:10.01,DAYCHANGE:-0.01,PE:6.4621,TURNOVERRATE:0.29,ADJUSTCLOSINGPRICE:16.1875,PB:0.9326},{AMPLITUDE:1.0135,PREVCLOSINGPRICE:5.92,TURNOVERDEALS:0,HIGHESTPRICE:5.94,TURNOVERVOL:47828421,TRADINGDAY:1345478400000,TOTALSHARE:28365585227,SECUCODE:"600016",EPS:0.3433,LOWESTPRICE:5.88,OPENINGPRICE:5.91,SECUABBR:"民生银行",ALISTEDSHARE:22587602387,ID:3132062,WCOSTAVG:6.1797,NETCASHFLOWOPERPS:-1.61,SECUNAME:"中国民生银行股份有限公司",CLOSINGPRICE:5.91,DAYCHANGERATE:-0.1689,TURNOVERVAL:282428002,BVPS:5.2,DAYCHANGE:-0.01,PE:6.0043,TURNOVERRATE:0.2117,ADJUSTCLOSINGPRICE:83.8993,PB:1.2936},{AMPLITUDE:1.8657,PREVCLOSINGPRICE:2.68,TURNOVERDEALS:0,HIGHESTPRICE:2.72,TURNOVERVOL:2086859,TRADINGDAY:1345478400000,TOTALSHARE:3075653888,SECUCODE:"600017",EPS:0.1249,LOWESTPRICE:2.67,OPENINGPRICE:2.69,SECUABBR:"日照港",ALISTEDSHARE:2630631660,ID:3133407,WCOSTAVG:3.0421,NETCASHFLOWOPERPS:0.122,SECUNAME:"日照港股份有限公司",CLOSINGPRICE:2.71,DAYCHANGERATE:1.1194,TURNOVERVAL:5634455,BVPS:2.674,DAYCHANGE:0.03,PE:17.342,TURNOVERRATE:0.0793,ADJUSTCLOSINGPRICE:8.5585,PB:1.2871}];#}
+
+                {#var items = [{'id': 18, 'name': '55', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '', 'data_list_id__agreement': 'http', 'req': 'GET', 'url': 'http://t.weather.sojson.com', 'url_address': '/api/weather/city/101030100', 'params': '[]', 'headers': '{}', 'body': "[{'key': 'fo1', 'values': 'fo1', 'file_text': 'text'}, {'key': 'fo2', 'values': 'fo2', 'file_text': 'text'}]", 'way_body': 'form_data'}, {'id': 19, 'name': '分组', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '', 'data_list_id__agreement': 'http', 'req': 'GET', 'url': '', 'url_address': '', 'params': '[]', 'headers': "{'Content-Type': 'application/x-www-form-urlencoded'}", 'body': "[{'keys': 'xx1', 'values': 'xx1'}, {'keys': 'xx2', 'values': 'xx2'}]", 'way_body': 'application_x_w'}, {'id': 20, 'name': 'zzz', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '1', 'data_list_id__agreement': 'HTTP', 'req': 'GET', 'url': '', 'url_address': '', 'params': '[]', 'headers': '{}', 'body': "[{'key': '1', 'values': '2', 'file_text': 'text'}]", 'way_body': 'form_data'}, {'id': 23, 'name': 'test1', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '', 'data_list_id__agreement': 'HTTP', 'req': 'GET', 'url': '', 'url_address': '', 'params': '[]', 'headers': '{}', 'body': "[{'keys': ' 一对黑白色小猫可爱图片_彼岸图网.jpg', 'values': '4c137e89724828e31cadca1fce32ab88'}]", 'way_body': 'file'}, {'id': 24, 'name': 'TTT', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '', 'data_list_id__agreement': 'http', 'req': 'GET', 'url': '', 'url_address': '', 'params': '[]', 'headers': "{'Content-Type': 'application/x-www-form-urlencoded'}", 'body': '', 'way_body': 'application_x_w'}, {'id': 26, 'name': '33', 'data_list_id__task_id__pro_name_model': 'aa', 'data_list_id__text': '', 'data_list_id__agreement': 'http', 'req': 'POST', 'url': 'http://www.baidu.com', 'url_address': '/?', 'params': "[{'keys': 't2', 'values': '2'}, {'keys': 't3', 'values': '3'}]", 'headers': "[{'keys': 'h1', 'values': 'h1'}, {'keys': 'h2', 'values': 'h2'}, {'keys': 'h3', 'values': 'h3'}]", 'body': "[{'key': '33', 'values': '33', 'file_text': 'text'}]", 'way_body': 'form_data'}];#}
+/*
+                var fixed2 = function(val){
+                    if(typeof val != 'number'){
+                        return '';
+                    }
+                    return val.toFixed(2);
+                }*/
+                console.log("urid");
+                console.log(urid);
+                var cols = [
+                    { title:'ID', name:'data_list_id__id' ,width:100, align:'right',  hidden: true,sortable: true },
+                    { title:'任务名 ', name:'name' ,width:100, align:'right', sortable: true },
+                    { title:'分类', name:'data_list_id__task_id__pro_name_model' ,width:100, align:'right', hidden: true, sortable: true },
+                    { title:'描述', name:'data_list_id__text' ,width:100, align:'right', hidden: true, sortable: true },
+                    { title:'协议', name:'data_list_id__agreement' ,width:100, align:'right', sortable: true },
+                    { title:'请求类型', name:'req' ,width:100, align:'right', sortable: true },
+                    { title:'服务地址', name:'url' ,width:100, align:'right', sortable: true },
+                    { title:'地址', name:'url_address' ,width:100, align:'right', sortable: true },
+                    { title:'URL参数', name:'params' ,width:100, align:'right', sortable: true },
+                    { title:'请求头', name:'headers' ,width:100, align:'right', sortable: true },
+                    { title:'请求体', name:'body' ,width:100, align:'right', sortable: true },
+                    { title:'请求方式', name:'way_body' ,width:100, align:'right', sortable: true },
+                    {#{ title:'断言', name:'PREVCLOSINGPRICE' ,width:100, align:'right', hidden: true, sortable: true },#}
+                    { title:'操作', name:'' ,width:150, align:'center', lockWidth:true, lockDisplay: true, renderer: function(val){
+                        return '<button  class="btn btn-info" onclick="to_show_request(this)">查看</button>'
+                    }}
+                ];
+                if(urid | urid=="") {
+
+
+                    var class_nam = '#table2-2';
+                    document.getElementById("test_show_to").style.display ='block';
+                    document.getElementById("test_case_to").style.display ='none';
+                    document.getElementById("test_case_list").style.display ='none';
+
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[0].className="active";
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[1].className="";
+
+                    document.getElementById("panel-348587").className="tab-pane active";
+                    document.getElementById("panel-466118").className="tab-pane";
+                }else if( ctd==""){
+
+                    var cols = [
+                    { title:'ID', name:'data_list_id__id' ,width:100, align:'right',  hidden: true,sortable: true },
+                    { title:'用例名', name:'add_test_name' ,width:200, align:'center', sortable: true },
+                    { title:'描述', name:'add_test_text' ,width:500, align:'center', sortable: true },
+                    {#{ title:'协议', name:'data_list_id__agreement' ,width:100, align:'right', sortable: true },#}
+                    { title:'操作', name:'' ,width:150, align:'center', lockWidth:true, lockDisplay: true, renderer: function(val){
+                        return '<button  class="btn btn-info" onclick="to_show_request(this)">查看</button>'
+                    }}
+                ];
+                    var class_nam = '#table2-2';
+                    document.getElementById("test_show_to").style.display ='none';
+                    document.getElementById("test_case_to").style.display ='block';
+                    document.getElementById("test_case_list").style.display ='none';
+
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[0].className="";
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[1].className="active";
+                    document.getElementById("panel-348587").className="tab-pane";
+                    document.getElementById("panel-466118").className="tab-pane active";
+                }else if(ctd){
+                    var cols = [
+                        { title:'ID', name:'data_list_id__id' ,width:100, align:'right',  hidden: true,sortable: true },
+                        { title:'步骤', name:'add_test_name' ,width:100, align:'center', sortable: true },
+                        { title:'行为', name:'add_test_text' ,width:100, align:'center', sortable: true },
+                        { title:'任务名', name:'add_test_text' ,width:200, align:'center', sortable: true },
+                        { title:'描述', name:'add_test_text' ,width:300, align:'center', sortable: true },
+                        {#{ title:'协议', name:'data_list_id__agreement' ,width:100, align:'right', sortable: true },#}
+                        { title:'操作', name:'' ,width:150, align:'center', lockWidth:true, lockDisplay: true, renderer: function(val){
+                            return '<button  class="btn btn-info" onclick="to_show_request(this)">查看</button>'
+                        }}
+                    ];
+                    var class_nam = '#table2-2';
+                    //显示表格按钮
+                    document.getElementById("test_show_to").style.display ='none';
+                    document.getElementById("test_case_to").style.display ='none';
+                    document.getElementById("test_case_list").style.display ='block';
+
+                    //切换左侧tab页
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[0].className="";
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[1].className="active";
+                    //显示对应tab内容
+                    document.getElementById("panel-348587").className="tab-pane";
+                    document.getElementById("panel-466118").className="tab-pane active";
+
+                }else {
+                    var class_nam = '#table2-2';
+                    document.getElementById("test_show_to").style.display ='block';
+                    document.getElementById("test_case_to").style.display ='none';
+                    document.getElementById("test_case_list").style.display ='none';
+
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[0].className="active";
+                    document.getElementById("tabs-409712").querySelectorAll("ul>li")[1].className="";
+
+                    document.getElementById("panel-348587").className="tab-pane active";
+                    document.getElementById("panel-466118").className="tab-pane";
+                }
+
+
+                {#用于引用数据#}
+                var cols3 = [
+                    { title:'ID', name:'data_list_id__id' ,width:100, align:'right',hidden: true,sortable: true },
+                    { title:'任务名 ', name:'name' ,width:100, align:'right', sortable: true },
+                    { title:'分类', name:'data_list_id__task_id__pro_name_model' ,width:100, align:'right' , sortable: true },
+                    { title:'描述', name:'data_list_id__text' ,width:100, align:'right',  sortable: true },
+                    { title:'协议', name:'data_list_id__agreement' ,width:100, align:'right', sortable: true },
+                    { title:'请求类型', name:'req' ,width:100, align:'right', sortable: true },
+                    {#{ title:'服务地址', name:'url' ,width:100, align:'right', sortable: true },#}
+                    {#{ title:'地址', name:'url_address' ,width:100, align:'right', sortable: true },#}
+                    {#{ title:'URL参数', name:'params' ,width:100, align:'right', sortable: true },#}
+                    {#{ title:'请求头', name:'headers' ,width:100, align:'right', sortable: true },#}
+                    {#{ title:'请求体', name:'body' ,width:100, align:'right', sortable: true },#}
+                    { title:'请求方式', name:'way_body' ,width:100, align:'right',hidden: true, sortable: true },
+                    {#{ title:'断言', name:'PREVCLOSINGPRICE' ,width:100, align:'right', hidden: true, sortable: true },#}
+                    { title:'操作', name:'' ,width:150, align:'center', lockWidth:true, lockDisplay: true, renderer: function(val){
+                        return '<button  class="btn btn-info" onclick="to_show_request(this)">选择</button>'
+                    }}
+                ];
+                var class_nam3 = '#to_table';
+
+
+
+                    //AJAX示例
+
+                var url = location.search;
+               $(class_nam).mmGrid({
+                    cols: cols,
+                    url: '{% url "task_project_get_list"%}'+url,
+                    method: 'get',
+                    nowrap: true,
+
+                });
+               $(class_nam3).mmGrid({
+                    cols: cols3,
+                    url: '{% url "task_project_get_list"%}'+"?id="+url_id,
+                    method: 'get',
+                    nowrap: true,
+
+                });
+
+
+            });
+
+                function show_tab_list(id) {
+                    var cols = [
+                    { title:'ID', name:'data_list_id__id' ,width:100, align:'right', sortable: true },
+                    { title:'接口名称', name:'name' ,width:100, align:'right', sortable: true },
+                    { title:'分类', name:'data_list_id__task_id__pro_name_model' ,width:100, align:'right', hidden: true, sortable: true },
+                    { title:'描述', name:'data_list_id__text' ,width:100, align:'right', hidden: true, sortable: true },
+                    { title:'协议', name:'data_list_id__agreement' ,width:100, align:'right', sortable: true },
+                    { title:'请求类型', name:'req' ,width:100, align:'right', sortable: true },
+                    { title:'服务地址', name:'url' ,width:100, align:'right', sortable: true },
+                    { title:'地址', name:'url_address' ,width:100, align:'right', sortable: true },
+                    { title:'URL参数', name:'params' ,width:100, align:'right', sortable: true },
+                    { title:'请求头', name:'headers' ,width:100, align:'right', sortable: true },
+                    { title:'请求体', name:'body' ,width:100, align:'right', sortable: true },
+                    { title:'请求方式', name:'way_body' ,width:100, align:'right', sortable: true },
+                    { title:'断言', name:'PREVCLOSINGPRICE' ,width:100, align:'right', hidden: true, sortable: true },
+                    { title:'操作', name:'' ,width:150, align:'center', lockWidth:true, lockDisplay: true, renderer: function(val){
+                        return '<button  class="btn btn-info">查看</button>'
+                    }}
+                ];
+                    console.log("进入list");
+                    console.log(id);
+                    url_id = getUrlParam('id');
+                    var url_p = window.location.origin+window.location.pathname+"?"+"id="+url_id +"&urid="+id;
+
+                    console.log(url_p);
+                    {#console.log(url_id);#}
+                    var url = location.search;
+                    window.history.pushState(null,null,url_p);
+                    window.location.reload();
+
+
+
+                };
+                //显示用例
+                function show_casename_list(id) {
+
+                    console.log("进入list");
+                    console.log(id);
+                    url_id = getUrlParam('id');
+                    var url_p = window.location.origin+window.location.pathname+"?"+"id="+url_id +"&ctd="+id;
+
+                    console.log(url_p);
+                    {#console.log(url_id);#}
+                    var url = location.search;
+                    window.history.pushState(null,null,url_p);
+                    window.location.reload();
+
+
+
+                };
+
+
+
+        </script>
+
+
+
+    <script src="/static/js/auto-line-number.js"  type="text/javascript"></script>
+    <script type="text/javascript">
+
+                    $(".req_textarea").setTextareaCount({
+                    width: "30px",
+                    bgColor: "#f6fcff",
+                    color: "#0a0000",
+                    display: "inline-block"
+                });
+
+
+
+     var project_name = document.getElementById("project_name");
+     var project_list = '{{ revert_lists.0.id | safe}}';
+     {#console.log(project_list);#}
+     {#var project_list = [{#}
+     {#    name : "北京",#}
+     {#    cityList:[]#}
+
+     {#    name : "北京1",#}
+     {#    cityList:[]#}
+
+
+     {#for(var i =0 ;i< project_list.length;i++){#}
+     {#    var option = new Option(project_list[i]["name"],project_list[i]["id"]);#}
+     {#    project_name.value=option;#}
+         {#project_name.options.add(option);#}
+         {#project_name.options.add(option)#}
+    <!-- }-->
+
+
+     {#初始化  iframe url#}
+     var project_id_va = document.getElementById("project_name").values;
+     url = "{% url 'list_name' %}"+ "?project=" + project_id_va;
+     {#var par = document.getElementById("ifra_right_data").src = url;#}
+
+    function getUrlParam(name){
+        //构造一个含有目标参数的正则表达式对象
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        //匹配目标参数
+        var r = window.location.search.substr(1).match(reg);
+        //返回参数
+        if (r != null) {
+            return unescape(r[2]);
+        } else{
+            return null;
+        }
+    }
+
+
+     {#页面根据选择了哪个模块显示内容#}
+     function req_rightdata(dat_id,dat){
+            {#alert(dat);#}
+            url = "{% url 'list_name' %}"+ "?id=" +dat_id +"&data=" + dat + "&project=" + project_list;
+            var par = document.getElementById("ifra_right_data").src = url;
+
+            {#document.getElementById("show_list_reqname").innerText = dat;#}
+            document.getElementById("show_list_reqname").name = dat_id;
+     }
+
+     function setUp_name(id) {
+         document.getElementById("task_Label").className = id;
+     }
+
+
+     function to_show_request(d_this) {
+         row=d_this.parentNode.parentNode.parentNode;
+         console.log(row);
+         var data_id = row.cells[0].innerText;
+         var data_name = row.cells[1].innerText;
+         console.log(data_id);
+         console.log(data_name);
+        show_request(parseInt(data_id),data_name);
+     }
+
+     function run_list() {
+
+         var id = getUrlParam('id');
+         var urid = getUrlParam('urid');
+
+
+         $.ajax({
+                url:"{% url 'runlist' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "id":id,
+                    "urid":urid
+                }),
+                success:function (data) {
+                    if (data["success"]) {
+                        alert(data["success"]);
+
+                        to_url = document.getElementById("show_resu").href;
+                        document.getElementById("show_resu").href=to_url+"?get_resu="+data["req_name"];
+                        {#console.log(to_url);#}
+                    }else {
+
+                        alert(data["fail"]);
+                    }
+
+                }
+         })
+     }
+
+     function show_resu_da() {
+
+         var resu_i = document.getElementById("show_resu").name;
+
+         $.ajax({
+                url:"{% url 'get_result' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "resu_i":resu_i
+                }),
+                success:function (data) {
+                    alert(data["fail"]);
+                }
+         })
+
+     }
+
+     {#显示右侧请求#}
+     function show_request(id,name) {
+
+            $.ajax({
+                url:"{% url 'show_data' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "id":id,
+                    "name":name
+                }),
+                success:function (data) {
+
+                    //显示接口详情
+                    show_display("1");
+
+                    if (data["success"]){
+                        console.log("后台返回成功");
+
+                        thml_par = '<tr>\n' +
+                                '<td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>\n' +
+                             '<td width="103" bgcolor="#EFEFEF" Name="Amount" EditType="TextBox">Key</td>\n' +
+                                ' <td width="103" bgcolor="#EFEFEF" Name="Price" EditType="TextBox">Values</td>\n' +
+                                ' <td width="20" bgcolor="#EFEFEF" Name="" EditType="TextBox"></td>\n' +
+                                ' </tr>';
+
+                        html_form_data = '<tr>\n' +
+                                        '<td width="20" align="center" bgcolor="#EFEFEF" name="Num"><input type="checkbox" name="checkbox" value="checkbox" /></td>\n' +
+                                        '<td  width="100" bgcolor="#EFEFEF" Name="key" EditType="TextBox">key</td>\n' +
+                                        '<td width="20" bgcolor="#EFEFEF" Name="key" EditType="DropDownList"\n' +
+                                        'DataItems="{text:\'test\',value:\'test\'},{text:\'file\',value:\'file\'}" style="width: 60px;"></td>\n' +
+                                        '<td width="103" bgcolor="#EFEFEF" Name="values" EditType="TextBox">values</td>\n' +
+                                        '<td width="30" bgcolor="#EFEFEF" Name="vt_button" EditType=""></td>\n' +
+                                        '</tr>';
+                        {#alert(data["success"]);#}
+                        html_file = '<tr>\n' +
+                            '<th width="20" align="center" bgcolor="#EFEFEF" name="Nu"><input type="checkbox" name="checkbox" value="checkbox" /></th>\n' +
+                            '<th  width="100" bgcolor="#EFEFEF" Name="file_name" EditType="TextBox">name</th>\n' +
+                            '<th width="103" bgcolor="#EFEFEF" Name="md5" EditType="TextBox">MD5</th>\n' +
+                            '<th width="30" bgcolor="#EFEFEF" Name="button" EditType=""></th>\n' +
+                            '</tr>';
+                        html_asserts='<tr>\n' +
+                            '<th width="10" align="center" bgcolor="#EFEFEF" name="Num">\n' +
+                            '<input type="checkbox" name="checkbox" value="checkbox" />\n' +
+                            '</th>\n' +
+                            '<th width="55" bgcolor="#EFEFEF" Name="assert_name" EditType="DropDownList" DataItems=\'{\n' +
+                            '"assertEqual":"assertEqual"},{"assertNotEqual":"assertNotEqual"},{ "assertIn":"assertIn"},{"assertNotIn":"assertNotIn"}\'>断言</th>\n' +
+                            '<th width="115" bgcolor="#EFEFEF" Name="left_data" EditType="TextBox">实际</th>\n' +
+                            '<th width="30" bgcolor="#EFEFEF" Name="right_int" EditType="DropDownList" DataItems="{text:\'int\',value:\'int\'},{text:\'str\', value:\'str\'},{text:\'json\', value:\'json\'}">数据类型</th>\n' +
+                            '<th width="120" bgcolor="#EFEFEF" Name="right_data" EditType="TextBox">预期</th>\n' +
+                            '<th width="25" bgcolor="#EFEFEF" Name="" EditType="TextBox"></th>\n' +
+                            '</tr>';
+
+
+                         {#清除数据残留#}
+                        {#    服务器地址#}
+                        document.getElementById("url_address").value = "";
+
+                        {#   路径 url_address2#}
+                        document.getElementById("url_address2").value = "";
+
+                        {#  params  #}
+                        document.querySelector("#tab_request_par>tbody").innerHTML = thml_par;
+                        //header
+                        document.querySelector("#tab_request_head>tbody").innerHTML = thml_par;
+
+                        //body
+                        document.querySelector("#form_data>tbody").innerHTML = html_form_data;
+                        document.querySelector("#application_x_w>tbody").innerHTML = thml_par;
+                        //file
+                        document.querySelector("#update_file2>tbody").innerHTML = html_file;
+
+                        //断言
+                        document.querySelector("#tab_req_assert>tbody").innerHTML = html_asserts;
+
+                        //响应
+                        document.getElementById("req_response_").value = '';
+
+
+
+
+                        {#给接口名赋值#}
+{#                        接口id#}
+                        uid = document.getElementById('add_req_name').valueOf = data["data"]["id"];
+                        console.log(uid);
+                        {#接口名#}
+                        document.querySelector('#add_req_name>h5>input').value =data["data"]["name"];
+                        {#协议#}
+                        document.querySelector('#add_req_agreement>h5>input').value =data["data"]["agreement"];
+                        console.log("pand");
+                        console.log(data["data"].hasOwnProperty("get_Req_data"));
+                        if ((data["data"]["agreement"] != "http") & (data["data"]["agreement"] != "HTTP") ) {
+                            console.log('1001');
+                        } else  if(data["data"].hasOwnProperty("get_Req_data")){
+                            console.log('1000');
+                            console.log(data["data"].hasOwnProperty("get_Req_data"));
+                            console.log(data["data"]["get_Req_data"]["req"]);
+                            console.log(data["data"]["get_Req_data"]["req"].length);
+                            {#请求协议#}
+                            var sele_get = "";
+                            var sele_post = "";
+                            if (data["data"]["get_Req_data"]["req"].length !=0) {
+                                {#console.log("进入请求判断");#}
+                            switch (data["data"]["get_Req_data"]["req"]) {
+                                case "GET":
+                                    sele_get = 'selected="selected"';
+                                    break;
+                                case "get":
+                                    sele_get = 'selected="selected"';
+                                    break;
+                                case "POST" :
+                                    sele_post = 'selected="selected"';
+                                    break;
+                                case "post":
+                                    sele_post = 'selected="selected"';
+                                    break;
+
+                            }}
+                            var sel_req = '<option value="GET" ' + sele_get + '>GET</option>' +
+                                '<option value="POST" ' + sele_post + '>POST</option>';
+                            document.getElementById("req_data").innerHTML = sel_req;
+                            {#    服务器地址#}
+                            document.getElementById("url_address").value = data["data"]["get_Req_data"]["url"];
+
+                            {#   路径 url_address2#}
+                            document.getElementById("url_address2").value = data["data"]["get_Req_data"]["url_address"];
+
+                            {#  params  #}
+
+                            var str_data = "";
+                            var par = data["data"]["get_Req_data"]["params"];
+                            var jsonList = eval("(" + par + ")");
+                            console.log("params");
+                            {#if(jsonList.length>0){#}
+                                //判断是否有数据
+                            for (var dat in jsonList) {
+                                console.log("params");
+
+                                {#for(var data_key in jsonList[dat]){#}
+                                    {#console.log(data_key);#}
+                                    str_data += "<tr>\n" +
+                                    "<td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>\n" +
+                                    "<td>" + dat + "</td>\n" +
+                                    "\n" +
+                                    "<td>" + jsonList[dat] + "</td>\n" +
+                                    "<td><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>\n" +
+                                    "</tr>";
+                                }
+
+                            //}
+                        //}
+                            document.querySelector("#tab_request_par>tbody").innerHTML = thml_par+str_data;
+
+                            //header
+                            var str_data_header = "";
+                            var data_hesder = data["data"]["get_Req_data"]["headers"];
+                            var jsonList = eval("(" + data_hesder + ")");
+
+                                //判断是否有数据
+                            for (var dat in jsonList) {
+                                {#console.log(dat);#}
+                                    str_data_header += "<tr>\n" +
+                                        "<td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>\n" +
+                                        "<td>" + dat + "</td>\n" +
+                                        "\n" +
+                                        "<td>" + jsonList[dat] + "</td>\n" +
+                                        "<td><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>\n" +
+                                        "</tr>";
+
+                            }
+                            document.querySelector("#tab_request_head>tbody").innerHTML = thml_par+str_data_header;
+
+                            //Body体
+                            str_data_body = "";
+                            {#var jsonList_formdata = eval(data_fordata);#}
+                            console.log("进入body");
+                            {#console.log(data["data"]["get_Req_data"]["way_body"].length);#}
+                            console.log(data["data"]["get_Req_data"]["way_body"]);
+                            var data_fordata = data["data"]["get_Req_data"]["body"];
+                            console.log(data_fordata.length);
+                            console.log(data_fordata);
+                            if(data_fordata.length>0) {
+                                console.log("12321");
+                                var jsonList_formdata = eval("(" + data_fordata + ")");
+                                console.log(jsonList_formdata);
+                                switch (data["data"]["get_Req_data"]["way_body"]) {
+                                    case "form_data":
+                                        for (var dat = 0; dat < jsonList_formdata.length; dat++) {
+
+                                            str_data_body += "<tr>\n" +
+                                                "<td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>" +
+                                                "<td>" + jsonList_formdata[dat]["key"] + "</td>\n" +
+                                                "\n" +
+                                                "<td>" + jsonList_formdata[dat]["file_text"] + "</td>\n";
+                                            if (jsonList_formdata[dat]["file_text"] == "text") {
+                                                str_data_body += "<td>" + jsonList_formdata[dat]["values"] + "</td>\n";
+                                            } else {
+                                                str_data_body += '<td><input type=\'file\'  value=\'\' size=\'\' /></td>';
+                                            }
+                                            str_data_body += "<td ><input type='button' name='' id='' onclick='update_form_dat(this)' value='修改' /></td>" +
+                                                "</tr>";
+                                        }
+                                        document.querySelector("#form_data>tbody").innerHTML = html_form_data + str_data_body;
+                                        break;
+                                    {#case 'application_x_w':#}
+                                    case 'form':
+
+                                        for (var dat in jsonList_formdata) {
+                                            str_data_body += "<tr>\n" +
+                                                "<td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>\n" +
+                                                "<td>" + dat + "</td>\n" +
+                                                "\n" +
+                                                "<td>" + jsonList_formdata[dat] + "</td>\n" +
+                                                "<td><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>\n" +
+                                                "</tr>";
+
+                                        }
+                                        document.querySelector("#application_x_w>tbody").innerHTML = thml_par + str_data_body;
+                                        break;
+                                    case 'file':
+                                        console.log('file');
+                                        for (var dat in jsonList_formdata) {
+                                            str_data_body += "<tr>\n" +
+                                                "<td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>\n" +
+                                                "<td>" + dat + "</td>\n" +
+                                                "\n" +
+                                                "<td>" + jsonList_formdata[dat] + "</td>\n" +
+                                                "<td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='file_Delete(this)' value='删除' /></td>\n" +
+                                                "</tr>";
+                                        }
+                                        document.querySelector("#update_file2>tbody").innerHTML = html_file + str_data_body;
+                                        break;
+
+
+                                }
+                            }
+                            console.log("222");
+                            console.log(str_data_body);
+
+
+
+                            var str_data_Body = "";
+                            var data_hesder = data["data"]["get_Req_data"]["headers"];
+
+                            var jsonList = eval("(" + data_hesder + ")");
+                            console.log(par);
+                            if(jsonList.length>0){
+                                //判断是否有数据
+                            for (var dat=0 ;dat<jsonList.length;dat++) {
+                                {#console.log(dat);#}
+                                str_data_header += "<tr>\n" +
+                                    "<td size='5'><input type='checkbox' name='checkbox2' value='checkbox' /></td>\n" +
+                                    "<td>" + jsonList[dat]["keys"] + "</td>\n" +
+                                    "\n" +
+                                    "<td>" + jsonList[dat]["values"] + "</td>\n" +
+                                    "<td><input type='button' name=''  onclick='update_two_text(this)' value='修改' /></td>\n" +
+                                    "</tr>";
+                            }}
+                            {#document.querySelector("#tab_request_head>tbody").innerHTML = html_form_data+str_data_body;#}
+
+                        }else{
+                            {#清除数据残留#}
+                            {#    服务器地址#}
+                            document.getElementById("url_address").value = "";
+
+                            {#   路径 url_address2#}
+                            document.getElementById("url_address2").value = "";
+
+                            {#  params  #}
+                            document.querySelector("#tab_request_par>tbody").innerHTML = thml_par;
+                            //header
+                            document.querySelector("#tab_request_head>tbody").innerHTML = thml_par;
+
+                            //body
+                            document.querySelector("#form_data>tbody").innerHTML = html_form_data;
+                            document.querySelector("#application_x_w>tbody").innerHTML = thml_par;
+                        };
+
+
+                        //断言tab_req_assert
+                        console.log("222");
+                        str_data_asserts = "";
+                        var data_asserts = data["data"]["get_asserts"];
+                        var jsonList_asserts = eval(data_asserts);
+
+                        if(data_asserts.length !=0 && jsonList_asserts.length !=0 && data_asserts.length != undefined && data_asserts.length !="" ){
+                            //判断是否有数据
+                        for (var dat=0 ;dat<jsonList_asserts.length;dat++) {
+                            str_data_asserts += "<tr>\n" +
+                                "<td size='5' bgcolor='#FFFFFF'><input type='checkbox' name='checkbox2' value='' /></td>\n" +
+                                "<td>" + jsonList_asserts[dat]["assert_name"] + "</td>\n" +
+                                "<td>" + jsonList_asserts[dat]["left_contrast"] + "</td>\n" +
+                                "<td>" + jsonList_asserts[dat]["right_contrast_int"] + "</td>\n" +
+                                "<td>" + jsonList_asserts[dat]["right_contrast"] + "</td>\n" +
+                                "<td size='20' bgcolor='#FFFFFF'><input type='button' name='' id='' onclick='update_tables_assert(this)' value='修改' /></td>\n" +
+                                "</tr>";
+                        }};
+                        document.querySelector("#tab_req_assert>tbody").innerHTML = html_asserts+str_data_asserts;
+
+                        {#console.log(data["data"]["agreement"]);#}
+
+                        //显示隐藏的内容，并隐藏表格 style="display:none;"  show_details  show_tables
+
+
+
+
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+                    {#window.location.reload();   //刷新整个页面#}
+
+                    {#alert("提交成功")#}
+                }
+            })
+     }
+
+     function show_display(id) {
+         if(id==1){
+            document.getElementById("show_details").style.display="";
+            document.getElementById("show_tables").style.display="none";
+         }else {
+            document.getElementById("show_details").styledisplay="none";
+            document.getElementById("show_tables").style.display="";
+         }
+
+
+
+     }
+
+     {##添加HTTP接口#}
+     function add_date(data_this){
+            {#ur = '{% url "add_interface" %} }';#}
+            {#alert(url);#}
+            url = data_this.getAttribute("urd");
+            {#url = document.getElementById("ifra_right_data").urd;#}
+            {#alert(url);#}
+            {#var s = document.getElementById("txt");#}
+            var project_id_va = document.getElementById("project_name").value;
+            var list_reqname = document.getElementById("show_list_reqname").innerText;
+            var list_reqname_id = document.getElementById("show_list_reqname").name;
+            console.log(project_id_va);
+            if (list_reqname){
+                location.href=url + "?list_name=" + list_reqname + "&project=" + project_id_va + "&small=" + list_reqname_id;
+                {#open('url + "?list_name=" + %s + "&project=" + %s')%(document.getElementById("show_list_reqname").innerText,project_id_va);#}
+                alert(location.href);
+            } else{
+                alert("请选择相应分类");
+            }
+
+
+     };
+        function save_taskName() {
+
+            task_Label = document.getElementById("task_Label").className;
+            task_name = document.getElementById("task_name").value;
+            task_agreement = document.getElementById("task_agreement").value;
+            task_text = document.getElementById("task_text").value;
+            if(task_name ==""){
+                alert("任务名称不允许为空，请输入");
+                return false;
+            }
+            $.ajax({
+                url:"{% url 'add_project_task_name' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "task_Label":task_Label,
+                    "task_name":task_name,
+                    "task_agreement":task_agreement,
+                    "task_text":task_text,
+                }),
+                success:function (data) {
+
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                        alert(data["success"]);
+                        console.log("id是 %s" %data);
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+                    window.location.reload();   //刷新整个页面
+
+                    {#alert("提交成功")#}
+                }
+            })
+
+        }
+
+        function to_project(){
+            alert("功能暂未实现");
+        }
+
+
+        function save_projectName(){
+
+            model_pro_name = document.getElementById("model_pro_name").value;
+            model_pro_text = document.getElementById("model_pro_text").value;
+            model_pro_id = document.getElementById("project_name").value;
+
+            {#alert(model_pro_id);#}
+            if(model_pro_name =="" & model_pro_name==null){
+                alert("任务名称不允许为空!!!");
+                return false;
+            }
+
+            $.ajax({
+                url:"{% url 'add_project_name' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "model_pro_id":'{{ revert_lists.0.id }}',
+                    "model_pro_name":model_pro_name,
+                    "model_pro_text":model_pro_text,
+                }),
+                success:function (data) {
+
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                        alert(data["success"]);
+                        console.log("id是 %s" %data["data_id"]);
+                        window.location.reload();   //刷新整个页面
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+
+
+                    {#alert("提交成功")#}
+                }
+            })
+        };
+        function update_files(obj){
+            // {#var file_lists = document.getElementById("file_Id")[0].files[0];#}
+            var file_lists = $("#file_Id1")[0]; //.files[0]
+            // {#var file_lists = new FormData(document.getElementById("file_Id")[0]);#}
+            // {#file_lists = new FormData(document.getElementById("file_Id")[0]);#}
+            var form_dat = new FormData();
+            // {#for(var i = 0; i< file_lists.length;i++){#}
+            // {#    //file_lists.files[i]#}
+            // {#    form_dat.append('files',file_lists.files[i]);}#}
+            // {#form_dat.append('files',file_lists)#}
+            // {#form_dat.append('files',file_lists.files);#}
+            //      {#var formDatas ={};#}
+                 //追加文件数据
+            //     {#form_data.append('jsp',file[0]);#}
+            // {#console.log(file_lists.files.length);#}
+            for(i=0;i<file_lists.files.length;i++){
+                console.log("这里是 updat_files中");
+                //formData.append("file["+i+"]", file[i]);
+                //console.log(file_lists.files[i]);
+                form_dat.append("files",file_lists.files[i]);}
+            // {#form_dat.append("files",file_lists.files);}#}
+
+
+
+            $.ajax({
+                    url: '{% url "add_files" %}',
+                    type: 'post',
+                    data: form_dat,
+                    dataType: 'json',
+                    processData: false,
+                    contentType: false,
+                    success: function (data) {
+                        // {#alert(data["files"]);#}
+                        // {#console.log(data.files);#}
+                        console.log(data["files"]);
+                        for(var i = 0;i < data["files"].length;i++){
+                            add_table_files(obj,data["files"][i]);
+                        }
+                    }
+                })
+        };
+
+
+        //添加测试用例名
+    function save_testname(){
+        add_test_name = document.getElementById("add_test_name").value;
+        add_test_text = document.getElementById("add_test_text").value;
+        var project_name_id = document.getElementById("project_name").attributes["value"].nodeValue;
+
+        console.log("project_name");
+        console.log(project_name_id);
+
+
+        if(add_test_name =="" & add_test_name==null){
+            alert("任务名称不允许为空!!!");
+            return false;
+        }
+
+
+
+
+        $.ajax({
+        url:'{% url "add_testcase" %}',
+        type:"POST",
+        // {#contentType:"application/json",#}
+        dataType:"json",
+        processData: false,
+        contentType: false,
+        data:JSON.stringify({
+            "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+            "project_name_id":project_name_id,
+            "add_test_name":add_test_name,
+            "add_test_text":add_test_text
+        }),
+        success:function (data) {
+            if (data["success"]){
+                console.log("后台返回成功");
+                window.location.reload();   //刷新整个页面
+                {#sleep(2000);#}
+                {#data = document.evaluate("//ul[@class='nav nav-tabs']//a[text()='测试用例']",document).iterateNext();#}
+                {#data.click();#}
+                {#console.log(data)#}
+
+            }else {
+                console.log("后台返回失败");
+                alert(data["fail"]);
+            }
+
+
+            // {#alert("提交成功")#}
+        }
+        })
+    };
+    
+    function show_mode_to() {
+        var show_dat = document.getElementById("to_select_data").value;
+        {#alert(show_dat);#}
+        switch (show_dat) {
+            case "to_fileread":
+                {#console.log("to_fileread");#}
+
+                document.getElementById("to_fileread").style.display="";
+
+                document.getElementById("to_http").style.display="none";
+                break;
+
+            case "to_http":
+                {#console.log("to_http");#}
+                document.getElementById("to_http").style.display="";
+                document.getElementById("to_fileread").style.display="none";
+                break;
+
+            case "to_re":
+                {#console.log("to_re");#}
+
+                document.getElementById("to_fileread").style.display="none";
+                document.getElementById("to_http").style.display="none";
+                break;
+
+            case "to_json":
+                {#console.log("to_json");#}
+
+                document.getElementById("to_fileread").style.display="none";
+                document.getElementById("to_http").style.display="none";
+
+                break;
+
+        }
+    }
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,409 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>项目</title>
+
+{#<link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">#}
+    <link rel="stylesheet" href="/static/css/bootstrap-3.3.4.css">
+{#        <link rel="stylesheet" href="/static/css/bootstrap-3.3.4.css">#}
+{#    <link rel="stylesheet" href="/static/css/auto_interface_lis/css/index.css">#}
+    <link rel="stylesheet" href="/static/css/bootstrap-3.3.4.css">
+{#    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.css">#}
+{#    <link rel="stylesheet" href="/static/css/layoutit.css" type="text/css">#}
+    <link rel="stylesheet" href="/static/css/bootstrap-combined.min.css" type="text/css">
+    <link rel="stylesheet" href="/static/ccc_m/css_ccc.css" type="text/css">
+    <link rel="stylesheet" href="/static/ccc_m/ccc_png.css" type="text/css">
+
+
+
+    <script  src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+
+
+
+</head>
+<body>
+    <div class="head_form">
+        <div class="container-fluid title_head ">
+	        <div class="row-fluid">
+                <div class="span12">
+                    <ul class="nav  nav-tabs">
+                        <li class="btn-lg">
+                            <a href="#">首页</a>
+                        </li>
+{#                        <li class="btn-lg">#}
+{#                            <a href="#">工具</a>#}
+{#                        </li>#}
+                        <li class="btn-lg">
+                            <a href='{% url "task_project" %}'>项目</a>
+                        </li>
+                        <li class="btn-lg">
+{#                            <a href='{% url "stagings"%}'>任务</a>#}
+                        </li>
+{#                        不能按动设置<li class="disabled">#}
+                        <li class="btn-lg">
+{#                            <a href="#">信息</a>#}
+                        </li>
+                        <li class="dropdown pull-right">
+                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ user.1 }}<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">任务</a>
+                                </li>
+                                <li>
+                                    <a href="#">个人信息</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href='{% url "log_out" %}'>退出</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{#    <hr style=" height:2px;border:none;border-top:2px dotted #185598;" />#}
+    <hr style="height:2px;border:none;border-bottom:2px  groove skyblue;margin-top: 0px; " />
+
+{% csrf_token %}
+
+    <div class="">
+        <div class="span3">
+            <div>
+
+                <form class="form-search">
+                <pre>
+                <input class="input-medium search-query" type="text" style="height: 33px;" /><button class="btn" contenteditable="true" type="submit">查找</button></pre>
+                </form>
+
+            </div>
+
+
+            <div class="accordion" id="accordion-506925">
+                <div class="accordion-group">
+                    <div class="accordion-heading" data-toggle="collapse" >
+{#                        <a class="accordion-toggle collapsed"  data-parent="#accordion-506925"  href="#accordion-element-302997">分 组 名</a>#}
+                        <span class="accordion-toggle collapsed" >分 组 名
+                            <a id="modal-579935" href="#modal-container-579935" title="添加分组名称" data-toggle="modal"class="bootstrap_png p_add" style="margin-left: 9px;float: right;"></a>
+                            <div id="modal-container-579935" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-header">
+                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h3 id="myModalLabe2">
+                                        添加分组
+                                    </h3>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="container-fluid">
+                                        <div class="row-fluid">
+                                            <div class="span12">
+                                                <form class="form-inline">
+                                                    <fieldset>
+                                                         <label>分组名：</label><input id="pro_name2" maxlength="15" placeholder="分组名称，限制15字符" type="text" style="height: 25px"/>
+                                                        <span class="help-block">描述：.</span>
+                                                        <textarea id="pro_text2" cols="30" rows="10" style="width: 100%"></textarea>
+                {#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                     <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="addgroup()">保存</button>
+                                </div>
+                            </div>
+{#                            <span class="bootstrap_png p_edit" style="margin-left: 9px;float: right;"></span>#}
+                        </span>
+                    </div>
+
+{#                <div class="accordion-body collapse" id="accordion-element-302997" style="height: 0px;">#}
+                    {% for foo in project_list %}
+                        <div class="accordion-inner" ><a href="#" onclick="to_project({{ foo.id }},'{{ foo.gro_name }}')" id="{{ foo.id }}">{{ foo.gro_name }}</a><span class="bootstrap_png p_edit" style="margin-left: 9px;float: right;"></span>
+                        </div>
+                    {% endfor %}
+
+
+{#                </div>#}
+                </div>
+            </div>
+
+
+        </div>
+        <div class="span10" > <!--style="height:400px; overflow:auto"-->
+            <div class="container-fluid" >
+                <div class="row-fluid" >
+
+                    <div class="" >
+                        <p>当前分组：<a href="#" id="pro_nid"></a></p>
+                         <a id="modal-579920" href="#modal-container-579920" role="button" class="btn" data-toggle="modal">添加项目</a>
+                        <div id="modal-container-579920" class="modal  fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3 id="myModalLabel">
+                                    添加
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="container-fluid">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <form class="form-inline">
+                                                <fieldset>
+                                                     <label>项目名：</label><input id="pro_name1" type="text" style="height: 25px"/>
+                                                    <span class="help-block">描述：.</span>
+                                                    <textarea id="pro_text1" cols="30" rows="10" style="width: 100%"></textarea>
+            {#                                        <label class="checkbox"><input type="checkbox" /> 勾选同意</label>#}
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                 <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" data-dismiss="modal"  onclick="save_proj()">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{#            <div class="embed-responsive embed-responsive-16by9" >#}
+{#                <iframe id ="mframe"   class="embed-responsive-item" scrolling="yes"  width="110%" height="80%" src="">#}
+{#                </iframe>#}
+    {#            onload="this.height=this.contentWindow.document.body.scrollHeight+35" #}
+
+{#            </div>#}
+{#            <iframe id ="frame" class="embed-responsive-item" scrolling="yes"  width="100%" height="400px" onload="this.height=this.contentWindow.document.body.scrollHeight+30" src="">#}
+
+{#            </iframe>#}
+
+
+            <div class="container-fluid">
+                 <div class="row-fluid">
+                    <div id="ul_con"  style="height:400px; overflow:auto;  ">
+{# class="span12" style="height:400px; overflow:auto" #}
+    {#                添加按钮#}
+                        <ul class="thumbnails row" id="list_dats">
+{#                            {% for task in task_pro %}#}
+{#                                <li class="span4 " style="margin-left:0px;margin-right: 1.5%">#}
+{#                                    <div class="thumbnail">#}
+                {#                            <img alt="300x200" src="#" />#}
+{#                                        <div class="caption">#}
+{#                                            <h3>#}
+{#                                                {{ task.pro_name }}#}
+{#                                            </h3>#}
+{#                                            <p class="test_hide" style="height: 43px;">#}
+{#                                                {{ task.pro_text }}#}
+{#                                            </p>#}
+{#                                            <p>#}
+{#                                                <a class="btn btn-primary" href="{% url 'task_project_details' %}?id={{ task.id }}" >项目详情</a>#}
+                {#                                    <a class="btn" href="#" onclick="aler()">添加人员</a>#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </li>#}
+{#                            {% endfor %}#}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+    <br>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var url_lis = "{% url 'task_project_details' %}";
+        function to_project(did,name) {
+            document.getElementById("pro_nid").innerText=name;
+            document.getElementById("pro_nid").className=did;
+
+            {#var urls = "{% url 'get_projectshow' %}"+"?did="+did;#}
+            {#console.log(urls);#}
+            {#document.getElementById("frame").src = urls;#}
+
+
+            {#document.getElementById("show_pro").href = urls;#}
+        {#    task_project#}
+
+            $.ajax({
+                url:"{% url 'get_project_show' %}",
+                type:"POST",
+                contentType:"application/json",
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "did":did,
+                }),
+                success:function (data) {
+                    {#window.location.reload();   //刷新整个页面#}
+
+
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                        {#alert(data["success"]);#}
+
+                        var str_data="";
+                        var str="";
+                        {#{% url \'task_project_details\' %}#}
+                        data["data"].forEach(function(e) {
+                            str_data += '<li class="span4 " style="margin-left:0px;margin-right: 1.5%">\n' +
+                                '                                    <div class="thumbnail">\n' +
+                                '                                        <div class="caption">\n' +
+                                '                                            <h3>\n' +e.pro_name +
+                                '                                            </h3>\n' +
+                                '                                            <p class="test_hide" style="height: 43px;">\n' +
+                                                                                 e.pro_text +
+                                '                                            </p>\n' +
+                                '                                            <p>\n' +
+                                '                                                <a class="btn btn-primary" href="'+url_lis+'?id='+e.id+'" >项目详情</a>\n' +
+                                '                                            </p>\n' +
+                                '                                        </div>\n' +
+                                '                                    </div>\n' +
+                                '                                </li>'
+                        })
+                        {#    <a class="btn" href="#" onclick="aler()">添加人员</a> #}
+
+                        document.getElementById("list_dats").innerHTML = str_data;
+                        {#alert(req_ret_data);#}
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+
+
+                    {#alert("提交成功")#}
+                }
+            })
+
+        }
+        
+    
+        function addgroup(){
+            addg_name = document.getElementById("pro_name2").value;
+            addg_text = document.getElementById("pro_text2").value;
+            $.ajax({
+                url:"{% url 'addGroup' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "pro_name":addg_name,
+                    "pro_text":addg_text,
+                }),
+                success:function (data) {
+                    window.location.reload();   //刷新整个页面
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                        alert(data["success"]);
+                        {#alert(data["body"]);#}
+                        req_ret_data(data["body"],data["headers"],data["data_id"]);
+                        {#console.log(data["body"]);#}
+
+                        console.log("id是 %s" %data["data_id"]);
+                        {#alert(req_ret_data);#}
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+
+
+                    {#alert("提交成功")#}
+                }
+            })
+        }
+
+        function save_proj(){
+
+            pro_name1 = document.getElementById("pro_name1").value;
+            pro_text1 = document.getElementById("pro_text1").value;
+            pro_pid = document.getElementById("pro_nid").className;
+
+            $.ajax({
+                url:"{% url 'add_project' %}",
+                type:"POST",
+                {#contentType:"application/json",#}
+                dataType:"json",
+                processData: false,
+                contentType: false,
+                async:false,
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "pro_name":pro_name1,
+                    "pro_text":pro_text1,
+                    "pro_pid":pro_pid,
+                }),
+                success:function (data) {
+                    {#$("#list_dats").load(location.href + " #list_dats"); //局部刷新#}
+                    to_project(pro_pid,pro_name1);
+                    {#window.location.reload();   //刷新整个页面#}
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                        alert(data["success"]);
+                        {#alert(data["body"]);#}
+                        req_ret_data(data["body"],data["headers"],data["data_id"]);
+                        {#console.log(data["body"]);#}
+
+                        console.log("id是 %s" %data["data_id"]);
+                        {#alert(req_ret_data);#}
+                    }else {
+                        console.log("后台返回失败");
+                        alert(data["fail"]);
+                    }
+
+
+                    {#alert("提交成功")#}
+                }
+            })
+
+
+
+        };
+
+       /* function to_details(to_id) {*/
+            {#lr = "{% url 'task_project_details' %}";#}
+            {#console.log(lr);#}
+            {#$.ajax({#}
+            {#    url:"{% url 'task_project_details' %}",#}
+    /*            type:"POST",
+                contentType:"application/json",
+                dataType:"json",
+                data:JSON.stringify({
+                    "csrfmiddlewaretoken": $("[name='csrfmiddlewaretoken']").val(),
+                    "id":to_id,
+
+                }),
+                success:function (data) {
+
+                    if (data["success"]){
+                        console.log("后台返回成功");
+                    }else {
+                        console.log("后台返回失败");
+                    }
+                }
+            })
+
+        }*/
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/templates/add_interface_data.html" line="65" />
+    <bookmark url="file://$PROJECT_DIR$/templates/task_project_details.html" line="1617" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0789298c-9148-4bf5-8c13-1d9f425d3540" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/show_resu_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69578e14-961e-4b9d-affe-16ceabe204fc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69578e14-961e-4b9d-affe-16ceabe204fc/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3147633-3614-4a74-a661-f9778eb7ecb8/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_interface/api_auto/lib/interface_http.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_interface/api_auto/lib/interface_http.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_interface/api_auto/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/auto_interface/api_auto/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_interface/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_interface/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_interface/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_interface/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_interface/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_interface/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desk_center/api_tomethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/desk_center/api_tomethod.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desk_center/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/desk_center/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desk_center/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/desk_center/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desk_center/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/desk_center/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Chrysanthemum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Desert.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Hydrangeas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Koala.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Lighthouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/Penguins.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save_files/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/ccc_m/js/add_testcase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap_editable/bootstrap3-editable/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap_editable/bootstrap3-editable/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ccc_m/css_ccc.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ccc_m/css_ccc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/c_tables_add.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/c_tables_add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_interface_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_interface_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/showhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/showhome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_project_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_project_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_project_right_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_project_right_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_project/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_interfaces_execute_interf_exec_test_.coverage" NAME="Twisted Trial for interfaces_execute.interf_exec.test_ Coverage Results" MODIFIED="1553403944009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$views.coverage" NAME="views Coverage Results" MODIFIED="1554042887850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_interfaces_execute_interf_exec_test_interface_.coverage" NAME="Twisted Trial for interfaces_execute.interf_exec.test_interface_ Coverage Results" MODIFIED="1561051092519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_in_tests_py.coverage" NAME="Twisted Trial in tests.py Coverage Results" MODIFIED="1561260398229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto" />
+    <SUITE FILE_PATH="coverage/test_project$interface_http.coverage" NAME="interface_http Coverage Results" MODIFIED="1561045649628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/lib" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_in_multiple_test_execute_py.coverage" NAME="Twisted Trial in multiple_test_execute.py Coverage Results" MODIFIED="1562080979578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_tests_TestDemo_testcase.coverage" NAME="Twisted Trial for tests.TestDemo.testcase Coverage Results" MODIFIED="1561198525158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_multiple_test_execute_APITestNew.coverage" NAME="Twisted Trial for multiple_test_execute.APITestNew Coverage Results" MODIFIED="1561483129064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_interfaces_execute_interf_exec_test_1.coverage" NAME="Twisted Trial for interfaces_execute.interf_exec.test_1 Coverage Results" MODIFIED="1553408501561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_in_interfaces_execute_py.coverage" NAME="Twisted Trial in interfaces_execute.py Coverage Results" MODIFIED="1558148671686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_in_run_test_py.coverage" NAME="Twisted Trial in run_test.py Coverage Results" MODIFIED="1562080570300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_interfaces_execute_interf_exec.coverage" NAME="Twisted Trial for interfaces_execute.interf_exec Coverage Results" MODIFIED="1553439155790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$config.coverage" NAME="config Coverage Results" MODIFIED="1553417255045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/configs" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_multiple_test_execute_APITestNew_test_sub.coverage" NAME="Twisted Trial for multiple_test_execute.APITestNew.test_sub Coverage Results" MODIFIED="1561483497902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_run_test_TestCases.coverage" NAME="Twisted Trial for run_test.TestCases Coverage Results" MODIFIED="1561646695507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_multiple_test_execute_ParametrizedTestCase.coverage" NAME="Twisted Trial for multiple_test_execute.ParametrizedTestCase Coverage Results" MODIFIED="1561482403575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$central_controls.coverage" NAME="central_controls Coverage Results" MODIFIED="1553419524826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/lib" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_run_test_TestOne_test_something.coverage" NAME="Twisted Trial for run_test.TestOne.test_something Coverage Results" MODIFIED="1561648354048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_api_auto_tests_TestDemo_testcase.coverage" NAME="Twisted Trial for api_auto.tests.TestDemo.testcase Coverage Results" MODIFIED="1561215924283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface" />
+    <SUITE FILE_PATH="coverage/test_project$Twisted_Trial_for_tests_TestDemo.coverage" NAME="Twisted Trial for tests.TestDemo Coverage Results" MODIFIED="1561204435098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_interface/api_auto" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desk_center/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auto_interface/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desk_center/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="513" column="55" selection-start-line="513" selection-start-column="55" selection-end-line="513" selection-end-column="55" />
+              <folding>
+                <element signature="e#15#43#0" expanded="true" />
+                <marker date="1606050605697" expanded="true" signature="2445:2448" ph="..." />
+                <marker date="1606050605697" expanded="true" signature="6640:7010" ph="..." />
+                <marker date="1606050605697" expanded="true" signature="19695:19700" ph="..." />
+                <marker date="1606050605697" expanded="true" signature="28446:28449" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/task_project_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="710" column="203" lean-forward="true" selection-start-line="710" selection-start-column="203" selection-end-line="710" selection-end-column="203" />
+              <folding>
+                <element signature="e#2723#2755#0#HTML" expanded="true" />
+                <element signature="e#4204#4229#0#HTML" expanded="true" />
+                <element signature="e#5389#5408#0#HTML" expanded="true" />
+                <element signature="e#6390#6421#0#HTML" expanded="true" />
+                <element signature="e#8642#8681#0#HTML" expanded="true" />
+                <element signature="e#10310#10330#0#HTML" expanded="true" />
+                <element signature="e#10340#10379#0#HTML" expanded="true" />
+                <element signature="e#11310#11331#0#HTML" expanded="true" />
+                <element signature="e#11542#11561#0#HTML" expanded="true" />
+                <element signature="e#12545#12576#0#HTML" expanded="true" />
+                <element signature="e#14481#14507#0#HTML" expanded="true" />
+                <element signature="e#16344#16371#0#HTML" expanded="true" />
+                <element signature="e#17346#17373#0#HTML" expanded="true" />
+                <element signature="e#17627#17662#0#HTML" expanded="true" />
+                <element signature="e#18445#18464#0#HTML" expanded="true" />
+                <element signature="e#19054#22871#0#HTML" />
+                <element signature="e#19429#19457#0#HTML" expanded="true" />
+                <element signature="e#21420#21439#0#HTML" expanded="true" />
+                <element signature="e#21485#21504#0#HTML" expanded="true" />
+                <element signature="e#21618#21638#0#HTML" expanded="true" />
+                <element signature="e#22151#22170#0#HTML" expanded="true" />
+                <element signature="e#22240#22259#0#HTML" expanded="true" />
+                <element signature="e#22399#22419#0#HTML" expanded="true" />
+                <element signature="e#21420#21439#0#HTML" expanded="true" />
+                <element signature="e#21485#21517#0#HTML" expanded="true" />
+                <element signature="e#21523#21555#0#HTML" expanded="true" />
+                <element signature="e#21726#21745#0#HTML" expanded="true" />
+                <element signature="e#21812#21831#0#HTML" expanded="true" />
+                <element signature="e#21872#21903#0#HTML" expanded="true" />
+                <element signature="e#23755#23777#0#HTML" expanded="true" />
+                <element signature="e#24182#24217#0#HTML" expanded="true" />
+                <element signature="e#23874#23895#0#HTML" expanded="true" />
+                <element signature="e#24065#24084#0#HTML" expanded="true" />
+                <element signature="e#25371#25404#0#HTML" expanded="true" />
+                <element signature="e#25151#25183#0#HTML" expanded="true" />
+                <element signature="e#26542#26561#0#HTML" expanded="true" />
+                <element signature="e#27113#27141#0#HTML" expanded="true" />
+                <element signature="e#34839#38350#0#HTML" />
+                <element signature="e#39345#39373#0#HTML" expanded="true" />
+                <element signature="e#41912#44252#0#HTML" />
+                <element signature="e#42397#42425#0#HTML" expanded="true" />
+                <element signature="e#44453#44775#0#HTML" expanded="true" />
+                <element signature="e#45160#49106#0#HTML" />
+                <element signature="e#46043#46071#0#HTML" expanded="true" />
+                <element signature="e#59289#59330#0#HTML" expanded="true" />
+                <element signature="e#49338#49612#0#HTML" expanded="true" />
+                <element signature="e#18547#18568#0#HTML" expanded="true" />
+                <element signature="e#18779#18798#0#HTML" expanded="true" />
+                <element signature="e#17185#17211#0#HTML" expanded="true" />
+                <element signature="e#17291#17312#0#HTML" expanded="true" />
+                <element signature="e#17660#17691#0#HTML" expanded="true" />
+                <element signature="e#17753#17784#0#HTML" expanded="true" />
+                <element signature="e#37758#37786#0#HTML" expanded="true" />
+                <element signature="e#41404#41432#0#HTML" expanded="true" />
+                <element signature="e#44565#44606#0#HTML" expanded="true" />
+                <element signature="e#44699#44973#0#HTML" expanded="true" />
+                <element signature="e#45264#45289#0#HTML" expanded="true" />
+                <element signature="e#45851#45872#0#HTML" expanded="true" />
+                <element signature="e#45922#45954#0#HTML" expanded="true" />
+                <element signature="e#46071#46092#0#HTML" expanded="true" />
+                <element signature="e#46691#46710#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>eval</find>
+      <find>form_data</find>
+      <find>测试</find>
+      <find>project_name</find>
+      <find>create_date</find>
+      <find>task_projects</find>
+      <find>add_test_name</find>
+      <find>querySelector</find>
+      <find>用例列表</find>
+      <find>create</find>
+      <find>show_tab_list('')</find>
+      <find>test_show_to</find>
+      <find>show_tab_list(</find>
+      <find>test_case_to</find>
+      <find>#modal-container</find>
+      <find>file</find>
+      <find>show_mode_to</find>
+      <find>update_tables_assert(this)</find>
+      <find>tab_req_assert</find>
+      <find>file_Id1</find>
+      <find>model_pro_name</find>
+      <find>model_pro_text</find>
+      <find>to_file_Id1</find>
+      <find>task_project_details</find>
+      <find>show_casename_list</find>
+      <find>table2</find>
+      <find>task_Datas</find>
+      <find>show_request</find>
+      <find>新增步骤</find>
+      <find>task_project_get_list</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/auto_interface_lis/auto_inter_list.css" />
+        <option value="$PROJECT_DIR$/templates/auto_interface_list.html" />
+        <option value="$PROJECT_DIR$/templates/stagings.html" />
+        <option value="$PROJECT_DIR$/templates/indexr.html" />
+        <option value="$PROJECT_DIR$/static/css/showhome.css" />
+        <option value="$PROJECT_DIR$/desk_center/temp.py" />
+        <option value="$PROJECT_DIR$/templates/auto_interface_list_right.html" />
+        <option value="$PROJECT_DIR$/templates/staging_tasks.html" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/lib/HTMLTestRunner.py" />
+        <option value="$PROJECT_DIR$/templates/run_task_lisk.html" />
+        <option value="D:/Python3.6/Lib/site-packages/django/core/handlers/exception.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/tests.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/run_interface/inter-11.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/run_interface/run_test.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/ret_list.py" />
+        <option value="$PROJECT_DIR$/templates/show_performances.html" />
+        <option value="$PROJECT_DIR$/static/add_interfa/grid_add.js" />
+        <option value="$PROJECT_DIR$/templates/staging_run_my_work.html" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/run_interface/interfaces_execute.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/run_interface/multiple_test_execute.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/lib/central_controls.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/configs/config.py" />
+        <option value="$PROJECT_DIR$/test_project/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/ccc_m/css_ccc.css" />
+        <option value="$PROJECT_DIR$/templates/task_project_right_list.html" />
+        <option value="$PROJECT_DIR$/static/bootstrap_table/dist/bootstrap-table.js" />
+        <option value="$PROJECT_DIR$/templates/add_interface_data.html" />
+        <option value="$PROJECT_DIR$/static/js/c_tables_add.js" />
+        <option value="$PROJECT_DIR$/desk_center/api_tomethod.py" />
+        <option value="$PROJECT_DIR$/static/examples/css/mmGrid.css" />
+        <option value="$PROJECT_DIR$/static/examples/js/main.js" />
+        <option value="$PROJECT_DIR$/static/examples/js/mmGrid.js" />
+        <option value="$PROJECT_DIR$/static/ccc_m/ccc_png.css" />
+        <option value="$PROJECT_DIR$/static/ccc_m/js/show_request.js" />
+        <option value="$PROJECT_DIR$/test_project/settings.py" />
+        <option value="$PROJECT_DIR$/templates/project_datas.html" />
+        <option value="$PROJECT_DIR$/templates/showhome.html" />
+        <option value="$PROJECT_DIR$/templates/temp_home.html" />
+        <option value="$PROJECT_DIR$/templates/task_projects.html" />
+        <option value="$PROJECT_DIR$/desk_center/urls.py" />
+        <option value="$PROJECT_DIR$/auto_interface/api_auto/lib/interface_http.py" />
+        <option value="$PROJECT_DIR$/desk_center/models.py" />
+        <option value="$PROJECT_DIR$/templates/show_resu_data.html" />
+        <option value="$PROJECT_DIR$/auto_interface/urls.py" />
+        <option value="$PROJECT_DIR$/static/ccc_m/js/add_testcase.js" />
+        <option value="$PROJECT_DIR$/auto_interface/models.py" />
+        <option value="$PROJECT_DIR$/auto_interface/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/desk_center/views.py" />
+        <option value="$PROJECT_DIR$/templates/task_project_details.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-38" />
+    <option name="y" value="174" />
+    <option name="width" value="1378" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="auto_interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="desk_center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="save_files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;das://69578e14-961e-4b9d-affe-16ceabe204fc/schema/main/table/desk_center_sy_cook_vr" />
+    <property name="ToolWindowConcurrent Activities Diagram.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codesr\py3\spider_ccc\test_project\static\vido_zly" />
+      <recent name="D:\codesr\py3\spider_ccc\test_project\static\css" />
+      <recent name="D:\codesr\py3\spider_ccc\test_project\static\js" />
+      <recent name="D:\codesr\py3\spider_ccc\test_project\auto_interface\api_auto\lib" />
+      <recent name="D:\codesr\py3\spider_ccc\test_project\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\codesr\py3\spider_ccc\test_project\static\stagings" />
+      <recent name="D:\codesr\py3\spider_ccc\test_project" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.test_project">
+    <configuration name="test_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="test_project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial for multiple_test_execute.APITestNew.test_sub" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;multiple_test_execute.APITestNew.test_sub&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial for run_test.TestCases" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;run_test.TestCases&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial for run_test.TestOne.test_something" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;run_test.TestOne.test_something&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial in multiple_test_execute.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/auto_interface/api_auto/run_interface/multiple_test_execute.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Twisted Trial in run_test.py" type="tests" factoryName="Twisted Trial" temporary="true" nameIsGenerated="true">
+      <module name="test_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_interface/api_auto/run_interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/auto_interface/api_auto/run_interface/run_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.test_project" />
+      <item itemvalue="Python tests.Twisted Trial in multiple_test_execute.py" />
+      <item itemvalue="Python tests.Twisted Trial for multiple_test_execute.APITestNew.test_sub" />
+      <item itemvalue="Python tests.Twisted Trial for run_test.TestCases" />
+      <item itemvalue="Python tests.Twisted Trial in run_test.py" />
+      <item itemvalue="Python tests.Twisted Trial for run_test.TestOne.test_something" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Twisted Trial in multiple_test_execute.py" />
+        <item itemvalue="Python tests.Twisted Trial in run_test.py" />
+        <item itemvalue="Python tests.Twisted Trial for run_test.TestOne.test_something" />
+        <item itemvalue="Python tests.Twisted Trial for run_test.TestCases" />
+        <item itemvalue="Python tests.Twisted Trial for multiple_test_execute.APITestNew.test_sub" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0789298c-9148-4bf5-8c13-1d9f425d3540" name="Default Changelist" comment="" />
+      <created>1536250118821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536250118821</updated>
+      <workItem from="1592129684601" duration="15360000" />
+      <workItem from="1592234808159" duration="22765000" />
+      <workItem from="1592759336049" duration="1217000" />
+      <workItem from="1593522322017" duration="5732000" />
+      <workItem from="1593531177903" duration="15234000" />
+      <workItem from="1595155723744" duration="81976000" />
+      <workItem from="1596367449922" duration="20996000" />
+      <workItem from="1596636380059" duration="7604000" />
+      <workItem from="1596879840327" duration="749000" />
+      <workItem from="1596893777128" duration="5733000" />
+      <workItem from="1596949703420" duration="32458000" />
+      <workItem from="1597554416253" duration="120576000" />
+      <workItem from="1598874733729" duration="80644000" />
+      <workItem from="1599437292709" duration="155656000" />
+      <workItem from="1600437181918" duration="52433000" />
+      <workItem from="1604581058421" duration="4622000" />
+      <workItem from="1604845527869" duration="81303000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 10m 36s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 11m 16s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 12m 04s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 12m 32s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 12m 44s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 12m 54s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 15m 54s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_run_test_py - 2019.07.02 at 23h 16m 11s.xml">
+      <configuration name="Twisted Trial in run_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 22m 13s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Twisted_Trial_in_multiple_test_execute_py - 2019.07.02 at 23h 23m 00s.xml">
+      <configuration name="Twisted Trial in multiple_test_execute.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="705058000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14220877" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.3262295" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4871407" visible="true" weight="0.28196722" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49546143" weight="0.43606558" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49924356" weight="0.32786885" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.2704918" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" weight="0.34477124" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5128593" side_tool="true" weight="0.2704918" />
+      <window_info anchor="bottom" id="Database Console" order="11" sideWeight="0.49848714" weight="0.27377048" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" sideWeight="0.50226927" side_tool="true" weight="0.27124184" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49621785" weight="0.4295082" />
+      <window_info anchor="bottom" id="Python Console" order="14" sideWeight="0.49848714" weight="0.32459018" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3267776" />
+      <window_info anchor="right" id="Database" order="4" weight="0.28139183" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Python.DjangoServer">
+        <watch expression="testunit" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>testunit</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameters</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ta</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/pic/h_bi_an.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_sy_cook_vr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/showhome.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task_projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3800">
+          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_desk_center_asserts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_work_tasking_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_list_user_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_left_name_data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_left_name_data_lists">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_work_distribution_task">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_work_tasking_name">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_work_historys">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_autoin_asserts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/_trial_temp/test.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/api_auto/configs/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/api_auto/ret_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/api_auto/lib/interface_http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/select_test_means.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1726" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_performances.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temp_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1161">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/showhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk_center/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task_project_right_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4139">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_work_run_request_history">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_resu_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_req_body">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project_datas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk_center/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ccc_m/js/show_request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_task_project_name">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/ccc_m/js/add_testcase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_task_projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/desk_center_task_project_model">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk_center/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1600959593545" expanded="true" signature="8372:8377" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_test_case_listname">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="633" column="29" lean-forward="true" selection-start-line="633" selection-start-column="29" selection-end-line="633" selection-end-column="29" />
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/c_tables_add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="202" column="51" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#option#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f9412137-91ba-4d31-bd4f-1e8ef63ffb83/schema/main/table/auto_interface_req_list_data">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_interface/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk_center/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desk_center/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="513" column="55" selection-start-line="513" selection-start-column="55" selection-end-line="513" selection-end-column="55" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+            <marker date="1606050605697" expanded="true" signature="2445:2448" ph="..." />
+            <marker date="1606050605697" expanded="true" signature="6640:7010" ph="..." />
+            <marker date="1606050605697" expanded="true" signature="19695:19700" ph="..." />
+            <marker date="1606050605697" expanded="true" signature="28446:28449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_files/123.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_files/03.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_files/2 7级花屏.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/task_project_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="710" column="203" lean-forward="true" selection-start-line="710" selection-start-column="203" selection-end-line="710" selection-end-column="203" />
+          <folding>
+            <element signature="e#2723#2755#0#HTML" expanded="true" />
+            <element signature="e#4204#4229#0#HTML" expanded="true" />
+            <element signature="e#5389#5408#0#HTML" expanded="true" />
+            <element signature="e#6390#6421#0#HTML" expanded="true" />
+            <element signature="e#8642#8681#0#HTML" expanded="true" />
+            <element signature="e#10310#10330#0#HTML" expanded="true" />
+            <element signature="e#10340#10379#0#HTML" expanded="true" />
+            <element signature="e#11310#11331#0#HTML" expanded="true" />
+            <element signature="e#11542#11561#0#HTML" expanded="true" />
+            <element signature="e#12545#12576#0#HTML" expanded="true" />
+            <element signature="e#14481#14507#0#HTML" expanded="true" />
+            <element signature="e#16344#16371#0#HTML" expanded="true" />
+            <element signature="e#17346#17373#0#HTML" expanded="true" />
+            <element signature="e#17627#17662#0#HTML" expanded="true" />
+            <element signature="e#18445#18464#0#HTML" expanded="true" />
+            <element signature="e#19054#22871#0#HTML" />
+            <element signature="e#19429#19457#0#HTML" expanded="true" />
+            <element signature="e#21420#21439#0#HTML" expanded="true" />
+            <element signature="e#21485#21504#0#HTML" expanded="true" />
+            <element signature="e#21618#21638#0#HTML" expanded="true" />
+            <element signature="e#22151#22170#0#HTML" expanded="true" />
+            <element signature="e#22240#22259#0#HTML" expanded="true" />
+            <element signature="e#22399#22419#0#HTML" expanded="true" />
+            <element signature="e#21420#21439#0#HTML" expanded="true" />
+            <element signature="e#21485#21517#0#HTML" expanded="true" />
+            <element signature="e#21523#21555#0#HTML" expanded="true" />
+            <element signature="e#21726#21745#0#HTML" expanded="true" />
+            <element signature="e#21812#21831#0#HTML" expanded="true" />
+            <element signature="e#21872#21903#0#HTML" expanded="true" />
+            <element signature="e#23755#23777#0#HTML" expanded="true" />
+            <element signature="e#24182#24217#0#HTML" expanded="true" />
+            <element signature="e#23874#23895#0#HTML" expanded="true" />
+            <element signature="e#24065#24084#0#HTML" expanded="true" />
+            <element signature="e#25371#25404#0#HTML" expanded="true" />
+            <element signature="e#25151#25183#0#HTML" expanded="true" />
+            <element signature="e#26542#26561#0#HTML" expanded="true" />
+            <element signature="e#27113#27141#0#HTML" expanded="true" />
+            <element signature="e#34839#38350#0#HTML" />
+            <element signature="e#39345#39373#0#HTML" expanded="true" />
+            <element signature="e#41912#44252#0#HTML" />
+            <element signature="e#42397#42425#0#HTML" expanded="true" />
+            <element signature="e#44453#44775#0#HTML" expanded="true" />
+            <element signature="e#45160#49106#0#HTML" />
+            <element signature="e#46043#46071#0#HTML" expanded="true" />
+            <element signature="e#59289#59330#0#HTML" expanded="true" />
+            <element signature="e#49338#49612#0#HTML" expanded="true" />
+            <element signature="e#18547#18568#0#HTML" expanded="true" />
+            <element signature="e#18779#18798#0#HTML" expanded="true" />
+            <element signature="e#17185#17211#0#HTML" expanded="true" />
+            <element signature="e#17291#17312#0#HTML" expanded="true" />
+            <element signature="e#17660#17691#0#HTML" expanded="true" />
+            <element signature="e#17753#17784#0#HTML" expanded="true" />
+            <element signature="e#37758#37786#0#HTML" expanded="true" />
+            <element signature="e#41404#41432#0#HTML" expanded="true" />
+            <element signature="e#44565#44606#0#HTML" expanded="true" />
+            <element signature="e#44699#44973#0#HTML" expanded="true" />
+            <element signature="e#45264#45289#0#HTML" expanded="true" />
+            <element signature="e#45851#45872#0#HTML" expanded="true" />
+            <element signature="e#45922#45954#0#HTML" expanded="true" />
+            <element signature="e#46071#46092#0#HTML" expanded="true" />
+            <element signature="e#46691#46710#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
